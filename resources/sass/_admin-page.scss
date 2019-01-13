@@ -1,0 +1,218 @@
+.admin-container {
+    display: grid;
+    grid-template-columns: 7rem repeat(10, 1fr) 7rem;
+    grid-template-rows: auto;
+}
+
+.admin-content {
+    grid-column: 2 / 12;
+    min-height: 30rem;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+}
+
+.not-logged-in {
+    margin: 1rem;
+    font-size: 1.7rem;
+    min-height: 5rem;
+    grid-column: 1 / -1;
+    line-height: 2;
+
+    a {
+        background-color: $color-navy;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: $color-yellow;
+        text-decoration: none;
+        font-size: 1.5rem;
+        height: 110%;
+        width: 120%;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: lighten($color: $color-navy, $amount: 10%);
+            cursor: pointer;
+        }
+    }
+}
+
+.admin-login {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    margin-bottom: 1rem;
+    height: 5rem;
+
+    form {
+        display: inline;
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        button {
+            margin-left: 1rem;
+            display: inline;
+
+            // &:hover {
+            //     background-color: lighten($color: $color-primary, $amount: 30%);
+            // }
+        }
+    }
+
+    a {
+        background-color: $color-navy;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: $color-yellow;
+        text-decoration: none;
+        font-size: 1.5rem;
+        height: 110%;
+        width: 120%;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: lighten($color: $color-navy, $amount: 10%);
+            cursor: pointer;
+        }
+    }
+}
+
+.admin-area-articles {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid $color-primary;
+
+    &-heading {
+        font-size: 2rem;
+        height: 4rem;
+        background-color: $color-primary;
+        color: $color-secondary;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    &-new {
+        grid-column: 1 / -1;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &-table {
+        grid-column: 1 / -1;
+        margin-top: 2rem;
+
+        th {
+            background-color: $color-primary;
+            color: $color-secondary;
+            height: 3rem;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightgrey;
+
+            &:hover {
+                background-color: darken($color: lightgrey, $amount: 10%);
+            }
+        }
+
+        tr:nth-child(even) {
+            background-color: white;
+
+            &:hover {
+                background-color: darken($color: white, $amount: 7%);
+            }
+        }
+
+        td {
+            height: 3rem;
+            padding-left: 1rem;
+
+            @media (max-width: 710px) {
+                height: 2.5rem;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+}
+
+.admin-area-fixtures {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    // grid-template-rows: repeat(5, 1fr);
+    border: 1px solid $color-primary;
+    align-content: start;
+
+    &-heading {
+        grid-row: 1 / 2;
+        height: 4rem;
+        font-size: 2rem;
+        background-color: $color-primary;
+        color: $color-secondary;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    &-fixtures,
+    &-results,
+    &-featured_fixture,
+    &-featured_result {
+        grid-column: 1 / -1;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        height: 2rem;
+    }
+
+    h1 {
+        color: $color-primary;
+        margin-bottom: 1rem;
+    }
+}
+
+.login-container {
+    grid-column: 1 / -1;
+    display: grid;
+    height: 30rem;
+
+    form {
+        min-height: 15rem;
+        width: 50%;
+        box-shadow: $box-shadow-light;
+        justify-self: center;
+        align-self: center;
+        display: grid;
+
+        .form-group {
+            justify-self: center;
+        }
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        input {
+            font-size: 1.5rem;
+        }
+
+        button {
+            background-color: $color-primary;
+            color: $color-secondary;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.push {
+    grid-column: 1 / -1;
+    min-height: 20rem;
+    background-color: $background-color-light;
+}

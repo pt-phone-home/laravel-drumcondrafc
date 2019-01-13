@@ -1,0 +1,43 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+@import "_about";
+@import "_add";
+@import "_admin-header";
+@import "_admin-page";
+@import "_animations";
+@import "_article-form";
+@import "_avatar";
+@import "_base";
+@import "_borders";
+@import "_button";
+@import "_card";
+@import "_carousel";
+@import "_colors";
+@import "_contact-form";
+@import "_contact";
+@import "_findus";
+@import "_fixtures";
+@import "_footer";
+@import "_gallery";
+@import "_header";
+@import "_home";
+@import "_index";
+@import "_members";
+@import "_messages";
+@import "_nav-bar";
+@import "_new_newsitem";
+@import "_news";
+@import "_overview";
+@import "_variables";
