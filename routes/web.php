@@ -49,3 +49,11 @@ Route::get('admin/results/{id}/editresults', 'ResultsController@edit')->middlewa
 Route::put('admin/results/{id}/', 'ResultsController@update')->middleware('auth');
 Route::delete('admin/results/{id}', 'ResultsController@destroy')->middleware('auth');
 
+Route::get('admin/createfeaturedfixture', 'FeaturedFixtureController@create')->middleware('auth');
+Route::post('admin/createfeaturedfixture', 'FeaturedFixtureController@store')->middleware('auth');
+Route::get('admin/featuredfixture/{id}/editfeaturedfixture', 'FeaturedFixtureController@edit')->middleware('auth');
+Route::put('admin/featuredfixture/{id}', 'FeaturedFixtureController@update')->middleware('auth');
+Route::delete('admin/featuredfixture/{id}', 'FeaturedFixtureController@destroy')->middleware('auth');
+
+Route::get('admin/createfeaturedresult', 'FeaturedResultController@create')->middleware('auth');
+

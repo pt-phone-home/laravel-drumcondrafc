@@ -24,8 +24,8 @@ class PagesController extends Controller
 
         $articles = Article::all()->take(6);
         $featured_articles = Article::all()->take(3);
-        $featured_fixtures = FeaturedFixture::all()->take(1);
-        $featured_results = FeaturedResults::all()->take(1);
+        $featured_fixtures = FeaturedFixture::orderBy('updated_at', 'DESC')->take(1)->get();
+        $featured_results = FeaturedResults::orderBy('updated_at', 'DESC')->take(1)->get();
 
         // \Mail::to('ptiernan@gmail.com')->send(
         //     new ProjectCreated()

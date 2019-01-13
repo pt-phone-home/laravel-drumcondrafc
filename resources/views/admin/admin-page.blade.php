@@ -148,15 +148,45 @@ Drumcondra FC Admin Panel
                 
             </p>
             <p class="admin-area-fixtures-featured_fixture">
-                <a href="new_featured_fixture.php">
+                <h1>Featured Fixture</h1>
+                <a href="/admin/createfeaturedfixture">
                     <h2>Add New Featured Fixture</h2>
                 </a>
-                <a href="">
-                    <h2>Edit Featured Fixture</h2>
-                </a>
+                <table class="admin-area-articles-table">
+                        <thead>
+                            <th>Title</th>
+                            <th>Published/Updated Date</th>
+                            <th colspan=2>Admin Options</th>
+                        </thead>
+                        <tbody>
+                            @foreach ($featured_fixtures as $fix)
+                            <tr>
+        
+                                <td>
+                                {{$fix->home_team}} v's {{$fix->away_team}}
+                                </td>
+                                <td>
+                                    {{$fix->updated_at}}
+                                </td>
+                                <td>
+                                <a href="admin/featuredfixture/{{$fix->id}}/editfeaturedfixture">Edit</a>
+                                </td>
+                                <td>
+                                    <form action="/admin/featuredfixture/{{$fix->id}}" method="POST" onsubmit="return confirm('Are you sure you want to delete this featured fixture? This cannot be undone!')">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button>DELETE</button>
+                                    </form>
+                                </td>
+        
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
             </p>
             <p class="admin-area-fixtures-featured_result">
-                <a href="new_featured_result.php">
+                <h1>Featured Result</h1>
+                <a href="/admin/createfeaturedresult">
                     <h2>Add New Featured result</h2>
                 </a>
                 <a href="">
