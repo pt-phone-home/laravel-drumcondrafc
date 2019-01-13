@@ -25,7 +25,7 @@
             
             
             
-                <button>Save</button>
+                <button>Update</button>
                 <a href="/admin">Go Back</a>
             </form>
         
