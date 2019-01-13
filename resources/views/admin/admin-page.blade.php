@@ -34,7 +34,7 @@ Drumcondra FC Admin Panel
                     <th colspan=2>Admin Options</th>
                 </thead>
                 <tbody>
-                    <?php foreach ($articles as $article): ?>
+                    @foreach ($articles as $article)
                     <tr>
 
                         <td>
@@ -57,7 +57,7 @@ Drumcondra FC Admin Panel
                         </td>
 
                     </tr>
-                    <?php endforeach; ?>
+                    @endforeach
                 </tbody>
             </table>
             
