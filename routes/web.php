@@ -56,4 +56,8 @@ Route::put('admin/featuredfixture/{id}', 'FeaturedFixtureController@update')->mi
 Route::delete('admin/featuredfixture/{id}', 'FeaturedFixtureController@destroy')->middleware('auth');
 
 Route::get('admin/createfeaturedresult', 'FeaturedResultController@create')->middleware('auth');
+Route::post('admin/createfeaturedresult', 'FeaturedResultController@store')->middleware('auth');
+Route::get('admin/featuredresult/{id}/editfeaturedresult', 'FeaturedResultController@edit')->middleware('auth');
+Route::put('admin/featuredresult/{id}', 'FeaturedResultController@update')->middleware('auth');
+Route::delete('admin/featuredresult/{id}', 'FeaturedResultController@destroy')->middleware('auth');
 
