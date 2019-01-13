@@ -17,9 +17,10 @@ Drumcondra FC Admin Panel
                     <label for="">You are logged in, please</label>
                     <button class="btn-flat">Log out</button>
                 </form>
+                @include('inc.messages')
         </div>
         <div class="admin-area-articles">
-            @include('inc.messages')
+            
             <h2 class="admin-area-articles-heading">Articles</h2>
             <p class="admin-area-articles-new">
                 <a href="/admin/createarticle">
@@ -100,21 +101,51 @@ Drumcondra FC Admin Panel
                                 </td>
         
                             </tr>
-                            <?php endforeach; ?>
+                            @endforeach
                         </tbody>
                     </table>
 
-                <a href="">
-                    <h2>Edit Weeks Fixtures</h2>
-                </a>
             </p>
+
             <p class="admin-area-fixtures-results">
-                <a href="new_results.php">
+                <h1>Weekly Results</h1>
+                <a href="/admin/createresults">
                     <h2>Add Weeks Results</h2>
                 </a>
-                <a href="">
-                    <h2>Edit Weeks Results</h2>
-                </a>
+                <table class="admin-area-articles-table">
+                        <thead>
+                            <th>Title</th>
+                            <th>Published/Updated Date</th>
+                            <th colspan=2>Admin Options</th>
+                        </thead>
+                        <tbody>
+                            @foreach ($results as $res)
+                            <tr>
+        
+                                <td>
+                                <a href="/resultsitem/{{$res->id}}">
+                                        {{$res->week_start}}
+                                    </a>
+                                </td>
+                                <td>
+                                    {{$res->updated_at}}
+                                </td>
+                                <td>
+                                <a href="admin/results/{{$res->id}}/editresults">Edit</a>
+                                </td>
+                                <td>
+                                    <form action="/admin/results/{{$res->id}}" method="POST" onsubmit="return confirm('Are you sure you want to delete these results? This cannot be undone!')">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button>DELETE</button>
+                                    </form>
+                                </td>
+        
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                
             </p>
             <p class="admin-area-fixtures-featured_fixture">
                 <a href="new_featured_fixture.php">

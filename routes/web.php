@@ -43,3 +43,9 @@ Route::get('admin/fixtures/{id}/editfixtures', 'FixturesController@edit')->middl
 Route::put('admin/fixtures/{id}', 'FixturesController@update')->middleware('auth');
 Route::delete('admin/fixtures/{id}', 'FixturesController@destroy')->middleware('auth');
 
+Route::get('admin/createresults', 'ResultsController@create')->middleware('auth');
+Route::post('admin/createresults', 'ResultsController@store')->middleware('auth');
+Route::get('admin/results/{id}/editresults', 'ResultsController@edit')->middleware('auth');
+Route::put('admin/results/{id}/', 'ResultsController@update')->middleware('auth');
+Route::delete('admin/results/{id}', 'ResultsController@destroy')->middleware('auth');
+
