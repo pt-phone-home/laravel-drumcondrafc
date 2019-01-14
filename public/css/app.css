@@ -108,6 +108,10 @@
   }
 }
 
+.about-info-text {
+  overflow: scroll;
+}
+
 @media (max-width: 920px) {
   .about-info-text {
     grid-column: 1/-1;
@@ -140,8 +144,8 @@
 }
 
 .about-info p {
-  padding: 5rem 10rem;
-  font-size: 1.7rem;
+  padding: 2rem 10rem;
+  font-size: 1.4rem;
   color: white;
   line-height: 1.4;
   letter-spacing: 0.7px;
