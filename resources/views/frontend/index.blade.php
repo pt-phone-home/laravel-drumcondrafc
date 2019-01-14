@@ -232,7 +232,7 @@ Welcome To Drumcondra FC: One Club - One Community
 
 
 				<div class="news_and_ads-news-action">
-					<a href="news.php">More News</a>
+					<a href="/news">More News</a>
 				</div>
 			</div>
 
