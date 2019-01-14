@@ -92,7 +92,7 @@ class AdminController extends Controller
 
         $article->save();
 
-        return redirect('/admin');
+        return redirect('/admin')->with('success', 'Article created successfully');
 
     }
 
