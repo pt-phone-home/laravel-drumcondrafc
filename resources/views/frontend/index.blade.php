@@ -14,7 +14,7 @@ Welcome To Drumcondra FC: One Club - One Community
                     @if($article->img)
                 <img src="{{$article->img}}" class="slide-img">
                     @else
-                    <img src="/images/uploads/default.jpg" alt="" class="slide-img">
+                    <img src="{{$article->img}}" alt="" class="slide-img">
                     @endif
                     <h1 class="slide-headline from-left">
                         {{$article->title}}
@@ -155,7 +155,7 @@ Welcome To Drumcondra FC: One Club - One Community
                         @if($article->img)
 						<img src="{{$article->img}}" alt="">
 						@else
-						<img src="/images/default.jpg" alt="">
+						<img src="{{$article->img}}}" alt="">
 						@endif
 					</div>
 					<div class="card-content card-content-plain">
@@ -167,7 +167,7 @@ Welcome To Drumcondra FC: One Club - One Community
 						</p>
 					</div>
 					<div class="card-footer">
-						<a href="newsitem.php?id=<?=$article['id'];?>">Read More</a>
+                    <a href="newsitem{{$article->id}}">Read More</a>
 					</div>
                 </div>
 				 @endforeach
