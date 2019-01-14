@@ -10,6 +10,7 @@
 
     <form action="/login" method="POST" class="">
         @csrf
+        @include('inc.messages')
         <div class="form-group">
             <label for="email">Email: </label>
             <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
