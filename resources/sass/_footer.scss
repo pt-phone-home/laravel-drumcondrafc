@@ -1,10 +1,28 @@
 .footer {
     grid-column: 1 / -1;
     grid-row: 6 / 7;
-    background-color: $color-navy;
+    background-color: $color-primary;
     min-height: 5rem;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 4fr 1fr;
+
+    .info {
+        justify-self: center;
+        align-self: center;
+        font-size: 1.3rem;
+        color: white;
+
+        span {
+            color: $color-secondary;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
 }

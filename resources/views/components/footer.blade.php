@@ -1,10 +1,5 @@
 <div class="footer">
-        <div class="footer-about">
-        </div>
-        <div class="footer-latest">
-        </div>
-        <div class="footer-info">
-        </div>
-        <div class="footer-connect">
+        <div class="info">
+            Made with <span>&hearts;</span> by <a href="http://www.rocketchipwebsolutions.ie" target="_blank">Rocket.Chip WebSolutions</a> 2019
         </div>
     </div>

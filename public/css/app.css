@@ -1641,8 +1641,26 @@ body {
   background-color: #2a3075;
   min-height: 5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 4fr 1fr;
+}
+
+.footer .info {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.footer .info span {
+  color: #f9ec37;
+}
+
+.footer .info a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .info a:hover {
+  color: red;
 }
 
 .gallery-container {
@@ -2901,8 +2919,15 @@ body {
 .mail-message {
   width: 100%;
   background-color: #80ff80;
-  height: 4rem;
+  height: 2rem;
   border-radius: 3px;
+  font-size: 1.5rem;
+}
+
+.success-message {
+  background-color: #00e600;
+  height: 2rem;
+  width: 100%;
   font-size: 1.5rem;
 }
 
