@@ -109,7 +109,7 @@ class AdminController extends Controller
             'title' => 'required|min:3|max:100',
             'headline' => 'required|min:10|max:100',
             'content' => 'required',
-            'img' => 'image|nullable'
+            'img' => 'image'
         ]);
 
         if ($request->file('img')) {
