@@ -11,6 +11,7 @@
     <section class="form-container">
             <form action="/admin/create" method="POST" class="contact-form article-form" enctype="multipart/form-data" name="myform" id="myform">
                 @csrf
+                @include('inc.messages')
                 <div class="form-group">
                     <label for="title">News Title:</label>
                     <input type="text" name="title" id="title" placeholder="Article Title" required>

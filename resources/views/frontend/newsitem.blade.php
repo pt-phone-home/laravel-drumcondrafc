@@ -20,7 +20,7 @@
             </h1>
 
             <div class="news-item-full-img">
-                @if ($article->img)
+                @if($article->img)
                 <img src="{{$article->img}}" alt="">
                 @else
             <img src="{{$article->img}}">
