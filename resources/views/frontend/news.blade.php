@@ -19,9 +19,9 @@ News - Drumcondra FC
             </h1>
             <div class="news-item-img">
                 @if ($article->img)
-                <img src="{{$article->img}}" alt="">
+                <img src="/{{$article->img}}" alt="">
                 @else
-                <img src="{{$article->img}}" alt="">
+                <img src="/{{$article->img}}" alt="">
                 @endif
             </div>
             <div class="news-item-content">

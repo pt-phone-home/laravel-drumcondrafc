@@ -78,9 +78,9 @@ class AdminController extends Controller
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('img')->getClientOriginalExtension();
             $filenameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('img')->move('/images/uploads', $filenameToStore);
+            $path = $request->file('img')->move('images/uploads', $filenameToStore);
         } else {
-            $path = '/images/uploads/default.jpg';
+            $path = 'images/uploads/default.jpg';
         }
         
 

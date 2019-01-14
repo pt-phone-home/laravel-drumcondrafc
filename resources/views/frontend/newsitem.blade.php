@@ -21,9 +21,9 @@
 
             <div class="news-item-full-img">
                 @if($article->img)
-                <img src="{{$article->img}}" alt="">
+                <img src="/{{$article->img}}" alt="">
                 @else
-            <img src="{{$article->img}}">
+            <img src="/{{$article->img}}">
                 @endif
             </div>
             <div class="news-item-full-content">
