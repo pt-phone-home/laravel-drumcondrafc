@@ -167,7 +167,7 @@ Welcome To Drumcondra FC: One Club - One Community
 						</p>
 					</div>
 					<div class="card-footer">
-                    <a href="newsitem{{$article->id}}">Read More</a>
+                    <a href="newsitem/{{$article->id}}">Read More</a>
 					</div>
                 </div>
 				 @endforeach
