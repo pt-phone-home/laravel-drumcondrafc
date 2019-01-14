@@ -68,7 +68,7 @@ class AdminController extends Controller
 
         $this->validate($request, [
             'title' => 'required|min:3|max:100',
-            'headline' => 'required|min:10|max:100',
+            'headline' => 'required|min:5|max:100',
             'content' => 'required',
             'img' => 'image'
         ]);
@@ -107,7 +107,7 @@ class AdminController extends Controller
 
         $this->validate($request, [
             'title' => 'required|min:3|max:100',
-            'headline' => 'required|min:10|max:100',
+            'headline' => 'required|min:5|max:100',
             'content' => 'required',
             'img' => 'image'
         ]);

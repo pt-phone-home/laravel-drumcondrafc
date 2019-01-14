@@ -12,6 +12,11 @@
             <form action="/admin/create" method="POST" class="contact-form article-form" enctype="multipart/form-data" name="myform" id="myform">
                 @csrf
                 @include('inc.messages')
+                @if($errors)
+                    @foreach($errors->all() as $error)
+                    <p>{{$error}}</p>
+                    @endforeach
+                @endif
                 <div class="form-group">
                     <label for="title">News Title:</label>
                     <input type="text" name="title" id="title" placeholder="Article Title" required>
