@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Notifications\InboxMessage;
 use App\Http\Requests\ContactFormRequest;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 
 use App\Article;
 use App\FeaturedFixture;
@@ -40,7 +42,8 @@ class PagesController extends Controller
 
     public function news() {
 
-        $articles = Article::Paginate(4);
+        $articles = Article::orderBy('updated_at', 'DESC')->paginate(5);
+        //Paginate(10);
 
         return view('frontend.news')->with('articles', $articles);
 

@@ -33,6 +33,8 @@ News - Drumcondra FC
             </div>
         </div>
         @endforeach
-        
+        <div class="links">
+            {{$articles->links()}}
+        </div>
     </div>
 @endsection
