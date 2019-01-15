@@ -14,7 +14,7 @@ class AdminController extends Controller
 {
     public function index() {
 
-        $articles = Article::all();
+        $articles = Article::orderBy('updated_at', 'DESC')->get();
         $featured_fixtures = FeaturedFixture::all();
         $featured_results = FeaturedResults::all();
         $fixtures = Fixture::all();
@@ -80,7 +80,7 @@ class AdminController extends Controller
             $filenameToStore = $filename . '_' . time() . '.' . $extension;
             $path = $request->file('img')->move('images/uploads', $filenameToStore);
         } else {
-            $path = 'images/uploads/default.jpg';
+            $path = 'images/uploads/default' . rand(1, 4) . '.jpg';
         }
         
 
@@ -119,7 +119,7 @@ class AdminController extends Controller
             $filenameToStore = $filename . '_' . time() . '.' . $extension;
             $path = $request->file('img')->move('/images/uploads', $filenameToStore);
         } else {
-            $path = '/images/uploads/default.jpg';
+            $path = 'images/uploads/default' . rand(1, 4). '.jpg';
         }
 
         $article = Article::find($id);

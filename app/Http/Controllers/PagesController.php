@@ -24,8 +24,8 @@ class PagesController extends Controller
 {
     public function index() {
 
-        $articles = Article::all()->take(6);
-        $featured_articles = Article::all()->take(3);
+        $articles = Article::orderBy('updated_at', 'DESC')->take(6)->get();
+        $featured_articles = Article::orderBy('updated_at', 'DESC')->take(3)->get();
         $featured_fixtures = FeaturedFixture::orderBy('updated_at', 'DESC')->take(1)->get();
         $featured_results = FeaturedResults::orderBy('updated_at', 'DESC')->take(1)->get();
 

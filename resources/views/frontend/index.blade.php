@@ -153,9 +153,9 @@ Welcome To Drumcondra FC: One Club - One Community
 				<div class="card card-large border-top-navy">
 					<div class="card-image">
                         @if($article->img)
-						<img src="{{$article->img}}" alt="">
+						<img src="/{{$article->img}}" alt="">
 						@else
-						<img src="{{$article->img}}}" alt="">
+						<img src="/{{$article->img}}}" alt="">
 						@endif
 					</div>
 					<div class="card-content card-content-plain">
