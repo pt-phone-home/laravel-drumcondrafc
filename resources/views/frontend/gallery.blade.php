@@ -18,10 +18,10 @@ Gallery - Drumcondra A.F.C
 
         <div class="gallery-window">
             <div class="main-img">
-                <img src="{!! url('/images/gallery/img1.jpg') !!}" alt="" id="current">
+                <img src="{{ URL::to('/') }}/images/gallery/img1.jpg" alt="" id="current">
             </div>
             <div class="imgs">
-                <img src="{!! url('/images/gallery/img1.jpg') !!}">
+                <img src="{{ URL::to('/') }}/images/gallery/img1.jpg">
                 <img src="/images/gallery/img2.jpg">
                 <img src="/images/gallery/img3.jpg">
                 <img src="/images/gallery/img4.jpg">
