@@ -18,7 +18,7 @@ Gallery - Drumcondra A.F.C
 
         <div class="gallery-window">
             <div class="main-img">
-                <img src="/images/brian_martin.png" alt="" id="current">
+                <img src="/images/gallery/img1.jpg" alt="" id="current">
             </div>
             <div class="imgs">
                 <img src="/images/gallery/img1.jpg">
