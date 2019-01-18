@@ -18,38 +18,38 @@ Gallery - Drumcondra A.F.C
 
         <div class="gallery-window">
             <div class="main-img">
-                <img src="/images/gallery/img1.jpg" alt="" id="current">
+                <img src="images/gallery/img1.jpg" alt="" id="current">
             </div>
             <div class="imgs">
-                <img src="/images/uploads/charity.jpg">
-                <img src="/images/gallery/img2.jpg">
-                <img src="/images/gallery/img3.jpg">
-                <img src="/images/gallery/img4.jpg">
-                <img src="/images/gallery/img5.jpg">
-                <img src="/images/gallery/img6.jpg">
-                <img src="/images/gallery/img7.jpg">
-                <img src="/images/gallery/img8.jpg">
-                <img src="/images/gallery/img9.jpg">
-                <img src="/images/gallery/img10.jpg">
-                <img src="/images/gallery/img11.jpg">
-                <img src="/images/gallery/img13.jpg">
-                <img src="/images/gallery/img14.jpg">
-                <img src="/images/gallery/img15.jpg">
-                <img src="/images/gallery/img16.jpg">
-                <img src="/images/gallery/img17.jpg">
-                <img src="/images/gallery/img18.jpg">
-                <img src="/images/gallery/img19.jpg">
-                <img src="/images/gallery/img20.jpg">
-                <img src="/images/gallery/img21.jpg">
-                <img src="/images/gallery/img22.jpg">
-                <img src="/images/gallery/img23.jpg">
-                <img src="/images/gallery/img24.jpg">
-                <img src="/images/gallery/img25.jpg">
-                <img src="/images/gallery/img26.jpg">
-                <img src="/images/gallery/img27.jpg">
-                <img src="/images/gallery/img29.jpg">
-                <img src="/images/gallery/img30.jpg">
-                <img src="/images/gallery/img32.jpg">
+                <img src="images/gallery/img1.jpg">
+                <img src="images/gallery/img2.jpg">
+                <img src="images/gallery/img3.jpg">
+                <img src="images/gallery/img4.jpg">
+                <img src="images/gallery/img5.jpg">
+                <img src="images/gallery/img6.jpg">
+                <img src="images/gallery/img7.jpg">
+                <img src="images/gallery/img8.jpg">
+                <img src="images/gallery/img9.jpg">
+                <img src="images/gallery/img10.jpg">
+                <img src="images/gallery/img11.jpg">
+                <img src="images/gallery/img13.jpg">
+                <img src="images/gallery/img14.jpg">
+                <img src="images/gallery/img15.jpg">
+                <img src="images/gallery/img16.jpg">
+                <img src="images/gallery/img17.jpg">
+                <img src="images/gallery/img18.jpg">
+                <img src="images/gallery/img19.jpg">
+                <img src="images/gallery/img20.jpg">
+                <img src="images/gallery/img21.jpg">
+                <img src="images/gallery/img22.jpg">
+                <img src="images/gallery/img23.jpg">
+                <img src="images/gallery/img24.jpg">
+                <img src="images/gallery/img25.jpg">
+                <img src="images/gallery/img26.jpg">
+                <img src="images/gallery/img27.jpg">
+                <img src="images/gallery/img29.jpg">
+                <img src="images/gallery/img30.jpg">
+                <img src="images/gallery/img32.jpg">
 
 
 
