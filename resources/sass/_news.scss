@@ -89,7 +89,7 @@
     &-content {
         grid-row: 3 / 4;
         margin-bottom: 0.5rem;
-        overflow: scroll;
+        overflow: none;
         font-size: 1.4rem;
         padding: 1rem 1rem;
         background-color: lighten($color: $color-primary, $amount: 66%);

@@ -21,7 +21,7 @@ Gallery - Drumcondra A.F.C
                 <img src="/images/gallery/img1.jpg" alt="" id="current">
             </div>
             <div class="imgs">
-                <img src="images/gallery/img1.jpg">
+                <img src="/images/uploads/charity.jpg">
                 <img src="/images/gallery/img2.jpg">
                 <img src="/images/gallery/img3.jpg">
                 <img src="/images/gallery/img4.jpg">
