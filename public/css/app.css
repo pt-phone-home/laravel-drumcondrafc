@@ -1119,7 +1119,7 @@ body {
 
 .card-content-plain {
   grid-template-columns: 1fr;
-  overflow: scroll;
+  overflow: none;
   text-overflow: ellipsis;
   word-wrap: break-word;
 }
