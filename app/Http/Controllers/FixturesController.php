@@ -4,25 +4,27 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Fixture;
+use App\NewFixtures;
 
 class FixturesController extends Controller
 {
     public function create() {
 
-        return view('admin.createfixtures');
+        return view('admin.createnewfixtures');
     }
 
     public function store(Request $request) {
 
         $this->validate($request, [
             'week_start' => 'required',
-            'content' => 'required'
+            
         ]);
 
-        $fixtures = new Fixture;
+        $fixtures = new NewFixtures;
 
-        $fixtures->week_start = $request['week_start'];
-        $fixtures->content = $request['content'];
+        $fixtures = $request->all();
+
+        dd($fixtures);
 
         $fixtures->save();
 
@@ -31,9 +33,9 @@ class FixturesController extends Controller
 
     public function edit($id) {
 
-        $fixtures = Fixture::find($id);
+        $fixtures = NewFixtures::find($id);
 
-        return view('admin.editfixtures')->with('fixtures', $fixtures);
+        return view('admin.editnewfixtures')->with('fixtures', $fixtures);
 
     }
 

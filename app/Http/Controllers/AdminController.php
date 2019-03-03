@@ -9,6 +9,7 @@ use App\FeaturedFixture;
 use App\FeaturedResults;
 use App\Fixture;
 use App\Result;
+use App\NewFixtures;
 
 class AdminController extends Controller
 {
@@ -17,7 +18,7 @@ class AdminController extends Controller
         $articles = Article::orderBy('updated_at', 'DESC')->get();
         $featured_fixtures = FeaturedFixture::all();
         $featured_results = FeaturedResults::all();
-        $fixtures = Fixture::all();
+        $fixtures = NewFixtures::all();
         $results = Result::all();
 
         return view('admin.admin-page')->with([

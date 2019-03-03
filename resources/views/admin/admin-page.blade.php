@@ -67,7 +67,7 @@ Drumcondra FC Admin Panel
             <h2 class="admin-area-fixtures-heading">Fixtures & Results</h2>
             <p class="admin-area-fixtures-fixtures">
                 <h1>Weekly Fixtures</h1>
-                <a href="/admin/createfixtures">
+                <a href="/admin/createnewfixtures">
                     <h2>Add Weeks Fixtures</h2>
                 </a>
 
@@ -82,15 +82,15 @@ Drumcondra FC Admin Panel
                             <tr>
         
                                 <td>
-                                <a href="/fixtureitem/{{$fix->id}}">
+                                <a href="/newfixturesitem/{{$fix->id}}">
                                         {{$fix->week_start}}
                                     </a>
                                 </td>
                                 <td>
-                                    {{$fix->updated_at}}
+                                    {{$fix->updated_at->diffForHumans()}}
                                 </td>
                                 <td>
-                                <a href="admin/fixtures/{{$fix->id}}/editfixtures">Edit</a>
+                                <a href="admin/fixtures/{{$fix->id}}/editnewfixtures">Edit</a>
                                 </td>
                                 <td>
                                     <form action="/admin/fixtures/{{$fix->id}}" method="POST" onsubmit="return confirm('Are you sure you want to delete these fixtures? This cannot be undone!')">

@@ -741,6 +741,11 @@ body {
   text-align: center;
 }
 
+.fixtures-table {
+  width: 90%;
+  text-align: center;
+}
+
 .login-container {
   grid-column: 1/-1;
   display: grid;
@@ -1639,6 +1644,60 @@ body {
   border: 1px solid #2a3075;
   display: grid;
   align-items: center;
+}
+
+.fixtures-item-container {
+  grid-column: 1/-1;
+  display: grid;
+  background: #9398d8;
+}
+
+.fixtures-item {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  justify-self: center;
+  display: grid;
+}
+
+.fixtures-item_heading {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  background: #2a3075;
+  color: #f9ec37;
+  margin-bottom: 2rem;
+}
+
+.fixtures-item-table {
+  width: 80%;
+  font-size: 1.5rem;
+  justify-self: center;
+  border: 3px solid #2a3075;
+}
+
+.fixtures-item-table tr {
+  height: 2.6rem;
+}
+
+.fixtures-item-table td {
+  padding-left: 10px;
+}
+
+.fixtures-item-table tbody tr:nth-child(odd) {
+  background: lightgray;
+}
+
+.fixtures-item-table_header {
+  background: #2a3075;
+  color: #f9ec37;
+  text-align: center;
+  height: 2.9rem;
+}
+
+.fixtures-item-table_day {
+  background: darkgray;
 }
 
 .footer {

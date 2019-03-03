@@ -1,44 +1,102 @@
 .fixtures-container {
-  display: grid;
-  grid-template-columns: 7rem repeat(10, 1fr) 7rem;
-  grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: 7rem repeat(10, 1fr) 7rem;
+    grid-template-rows: auto;
 }
 
 .fixtures {
-  grid-column: 3 / 11;
-  min-height: 30rem;
-  margin-bottom: 1rem;
-  padding: 2rem;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 0.2rem;
-
-  @media (max-width: 1150px) {
-    grid-column: 2 / 12;
-  }
-  @media (max-width: 940px) {
-    grid-column: 1 / -1;
-  }
-  @media (max-width: 630px) {
-    padding: 4rem;
-  }
-  @media (max-width: 450px) {
-    padding: 2rem;
-  }
-
-  h1 {
+    grid-column: 3 / 11;
+    min-height: 30rem;
     margin-bottom: 1rem;
-  }
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 0.2rem;
+
+    @media (max-width: 1150px) {
+        grid-column: 2 / 12;
+    }
+    @media (max-width: 940px) {
+        grid-column: 1 / -1;
+    }
+    @media (max-width: 630px) {
+        padding: 4rem;
+    }
+    @media (max-width: 450px) {
+        padding: 2rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
 }
 
 .fixture_card {
-  height: 10rem;
-  padding: 0.5rem 0.5rem;
-  box-shadow: $box-shadow-light;
-  text-align: center;
-  border: 1px solid $color-primary;
-  display: grid;
-  align-items: center;
+    height: 10rem;
+    padding: 0.5rem 0.5rem;
+    box-shadow: $box-shadow-light;
+    text-align: center;
+    border: 1px solid $color-primary;
+    display: grid;
+    align-items: center;
+}
+
+// Fixture Item
+
+.fixtures-item-container {
+    grid-column: 1 / -1;
+    display: grid;
+    background: lighten($color: $color-primary, $amount: 40%);
+}
+
+.fixtures-item {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    justify-self: center;
+    display: grid;
+
+    &_heading {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 2.5rem;
+        text-align: center;
+        background: $color-primary;
+        color: $color-secondary;
+        margin-bottom: 2rem;
+    }
+}
+
+.fixtures-item-table {
+    width: 80%;
+    font-size: 1.5rem;
+    justify-self: center;
+    border: 3px solid $color-primary;
+
+    tr {
+        height: 2.6rem;
+    }
+
+    td {
+        padding-left: 10px;
+    }
+
+    tbody {
+        tr:nth-child(odd) {
+            background: lightgray;
+        }
+    }
+
+    &_header {
+        background: $color-primary;
+        color: $color-secondary;
+        text-align: center;
+        height: 2.9rem;
+    }
+
+    &_day {
+        background: darkgray;
+    }
 }

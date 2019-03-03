@@ -37,11 +37,19 @@ Route::put('admin/{id}', 'AdminController@update')->middleware('auth');
 Route::delete('admin/{id}', 'AdminController@destroy')->middleware('auth');
 
 
-Route::get('admin/createfixtures', 'FixturesController@create')->middleware('auth');
-Route::post('admin/createfixtures', 'FixturesController@store')->middleware('auth');
-Route::get('admin/fixtures/{id}/editfixtures', 'FixturesController@edit')->middleware('auth');
-Route::put('admin/fixtures/{id}', 'FixturesController@update')->middleware('auth');
-Route::delete('admin/fixtures/{id}', 'FixturesController@destroy')->middleware('auth');
+// Route::get('admin/createfixtures', 'FixturesController@create')->middleware('auth');
+// Route::post('admin/createfixtures', 'FixturesController@store')->middleware('auth');
+// Route::get('admin/fixtures/{id}/editfixtures', 'FixturesController@edit')->middleware('auth');
+// Route::put('admin/fixtures/{id}', 'FixturesController@update')->middleware('auth');
+// Route::delete('admin/fixtures/{id}', 'FixturesController@destroy')->middleware('auth');
+
+
+Route::get('admin/createnewfixtures', 'NewFixturesController@create')->middleware('auth');
+Route::post('admin/createnewfixtures', 'NewFixturesController@store')->middleware('auth');
+Route::get('admin/fixtures/{id}/editnewfixtures', 'NewFixturesController@edit')->middleware('auth');
+Route::put('admin/fixtures/{id}', 'NewFixturesController@update');
+Route::get('/newfixturesitem/{id}', 'NewFixturesController@show');
+Route::delete('/admin/fixtures/{id}', 'NewFixturesController@destroy')->middleware('auth');
 
 Route::get('admin/createresults', 'ResultsController@create')->middleware('auth');
 Route::post('admin/createresults', 'ResultsController@store')->middleware('auth');
