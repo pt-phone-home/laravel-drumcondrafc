@@ -288,8 +288,9 @@
         padding: 1.5rem 1rem;
 
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 2rem repeat(3, 1fr);
         grid-row-gap: 0.5rem;
+        justify-content: start;
 
         @media (max-width: 920px) {
             grid-column: 1 / -1;
@@ -298,6 +299,32 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 1rem;
+        }
+
+        &_title {
+            font-size: 2.5rem;
+            text-align: center;
+
+            @media (max-width: 920px) {
+                grid-column: 1 / -1;
+            }
+        }
+    }
+}
+
+.sponsor-card {
+    display: flex;
+    border: none;
+
+    &-img {
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+
+        img {
+            object-fit: contain;
+            max-height: 10rem;
+            width: 100%;
         }
     }
 }

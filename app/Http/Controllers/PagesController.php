@@ -119,7 +119,7 @@ class PagesController extends Controller
 
         // dd($email);
 
-        \Mail::to('admin@drumcondrafc.com')->send(
+        \Mail::to('jacintadrumcondra1@gmail.com')->send(
                 new MailCreated($email)
         );
         return redirect('/contact')->with('mail', 'Thanks for getting in touch');

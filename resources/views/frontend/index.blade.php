@@ -155,7 +155,8 @@ Welcome To Drumcondra FC: One Club - One Community
                         @if($article->img)
 						<img src="/{{$article->img}}" alt="">
 						@else
-						<img src="/{{$article->img}}}" alt="">
+						<img src="/
+                        {{$article->img}}}" alt="">
 						@endif
 					</div>
 					<div class="card-content card-content-plain">
@@ -237,8 +238,11 @@ Welcome To Drumcondra FC: One Club - One Community
 			</div>
 
 			<div class="news_and_ads-ads">
-				<div class="card border-navy">
-					Sponsor One
+                <div class="news_and_ads-ads_title">Sponsors</div>
+				<div class="card border-navy sponsor-card">
+					<div class="sponsor-card-img">
+                        <a href="http://www.rocketchipwebsolutions.ie" target="_blank"><img src="/images/color_logo_transparent.png" alt=""></a>
+                    </div>
 				</div>
 				<div class="card border-navy">
 					Sponsor Two
