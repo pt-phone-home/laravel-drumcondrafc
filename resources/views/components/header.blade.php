@@ -26,9 +26,7 @@
         <div class="break"></div>
     
         <div class="nav2">
-            <li>
-                <a href="/results">Results</a>
-            </li>
+           
             <li>
                 <a href="/members">Members</a>
             </li>
@@ -59,9 +57,9 @@
         <li>
             <a href="/fixtures">Fixtures</a>
         </li>
-        <li>
+        {{-- <li>
             <a href="/results">Results</a>
-        </li>
+        </li> --}}
         <li>
             <a href="/members">Members</a>
         </li>

@@ -14,6 +14,7 @@ use App\Article;
 use App\FeaturedFixture;
 use App\FeaturedResults;
 use App\Fixture;
+use App\NewFixtures;
 use App\Result;
 use App\Mail;
 use App\Mail\ProjectCreated;
@@ -68,7 +69,7 @@ class PagesController extends Controller
 
     public function fixtures() {
 
-        $fixtures = Fixture::all();
+        $fixtures = NewFixtures::all();
 
         return view('frontend.fixtures')->with('fixtures', $fixtures);
     }

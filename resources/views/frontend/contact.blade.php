@@ -76,8 +76,8 @@ Contact - Drumcondra A.F.C
                 <h3>Brian Martin</h3>
                 <h3> 087 744 3583</h3>
             </div>
-            <h4>Email:
-                <span>drumcondrafc@gmail.com</span>
+            <h4 class="contact_email">Email:
+                <span>jacintadrumcondra1@gmail.com</span>
             </h4>
 
 

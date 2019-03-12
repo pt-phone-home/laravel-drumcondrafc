@@ -16,7 +16,7 @@ Fixtures - Drumcondra A.F.C
         @foreach($fixtures as $fix)
         <div class="fixture_card">
             <h3>Week Beginning :</h3>
-        <a href="/fixtureitem/{{$fix->id}}"> 
+        <a href="{{route('fixture.item', ['id' => $fix->id])}}"> 
                 <h1>
                     {{$fix->week_start}}
                 </h1>

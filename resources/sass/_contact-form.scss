@@ -1,61 +1,69 @@
 .contact-form {
-  //   box-shadow: $box-shadow-light;
-  .form-group {
-    display: block;
-    padding: 1rem;
+    //   box-shadow: $box-shadow-light;
+    .form-group {
+        display: block;
+        padding: 1rem;
 
-    .message-label {
-      text-align: left;
+        .message-label {
+            text-align: left;
+        }
+
+        label {
+            font-weight: bolder;
+            margin: 1rem 1rem;
+            font-size: 1.5rem;
+            display: block;
+        }
+
+        input {
+            margin: 1rem 1rem;
+            font-size: 1.5rem;
+            display: block;
+            width: 70%;
+            height: 3rem;
+
+            @media (max-width: 500px) {
+                width: 90%;
+            }
+        }
+
+        textarea {
+            margin: 1rem 1rem;
+            font-size: 1.5rem;
+            display: block;
+            width: 70%;
+
+            @media (max-width: 500px) {
+                width: 90%;
+            }
+        }
     }
 
-    label {
-      font-weight: bolder;
-      margin: 1rem 1rem;
-      font-size: 1.5rem;
-      display: block;
+    .submit {
+        margin: 1rem 1rem;
+        font-size: 1.5rem;
+        display: block;
+        width: 15%;
+        height: 3.5rem;
+        background-color: $color-primary;
+        color: $color-secondary;
     }
-
-    input {
-      margin: 1rem 1rem;
-      font-size: 1.5rem;
-      display: block;
-      width: 70%;
-      height: 3rem;
-    }
-
-    textarea {
-      margin: 1rem 1rem;
-      font-size: 1.5rem;
-      display: block;
-      width: 70%;
-    }
-  }
-
-  .submit {
-    margin: 1rem 1rem;
-    font-size: 1.5rem;
-    display: block;
-    width: 15%;
-    height: 3.5rem;
-    background-color: $color-primary;
-    color: $color-secondary;
-  }
 }
 
 .login-form {
-  .form-group {
-    input {
-      width: 50%;
+    .form-group {
+        input {
+            width: 50%;
+        }
     }
-  }
 
-  button {
-    margin: 1rem 1rem;
-    font-size: 1.5rem;
-    display: block;
-    width: 10%;
-    height: 3.5rem;
-    background-color: $color-primary;
-    color: $color-secondary;
-  }
+    button {
+        margin: 1rem 1rem;
+        font-size: 1.5rem;
+        display: block;
+        width: 10%;
+        height: 3.5rem;
+        background-color: $color-primary;
+        color: $color-secondary;
+    }
 }

@@ -93,6 +93,10 @@
         font-size: 1.4rem;
         padding: 1rem 1rem;
         background-color: lighten($color: $color-primary, $amount: 66%);
+        & * {
+            padding: 0.5rem 1rem;
+            line-height: 20px;
+        }
     }
 
     &-footer {
@@ -142,6 +146,8 @@
         grid-row: 2 / 3;
         width: 100%;
         margin-top: 0.5rem;
+        background: lighten($color: $color-primary, $amount: 50%);
+        padding: 1rem 2rem;
         img {
             object-fit: contain;
             width: 100%;
@@ -155,6 +161,11 @@
         overflow: hidden;
         font-size: 1.4rem;
         padding: 1rem 1rem;
+
+        & * {
+            padding: 0.5rem 1rem;
+            line-height: 20px;
+        }
     }
 
     &-footer {

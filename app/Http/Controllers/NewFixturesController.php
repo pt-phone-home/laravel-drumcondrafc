@@ -13,7 +13,7 @@ class NewFixturesController extends Controller
 
         $fixtures = NewFixtures::find($id);
 
-        return view('admin.newfixturesitem')->with('fixtures', $fixtures);
+        return view('frontend.newfixturesitem')->with('fixtures', $fixtures);
 
     }
     public function create() {

@@ -164,7 +164,7 @@ Welcome To Drumcondra FC: One Club - One Community
 							{{$article->title}}
 						</h4>
 						<p>
-							{{$article->headline}}
+							{{str_limit($article->headline, $limit = 20, $end = '...')}}
 						</p>
 					</div>
 					<div class="card-footer">

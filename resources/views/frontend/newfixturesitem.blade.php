@@ -1,4 +1,4 @@
-@extends('adminmaster')
+@extends('frontmaster')
 
 @section('title')
 
@@ -225,7 +225,7 @@
                 
             </table>
 
-            <a href="/admin" class="btn">Back to admin</a>
+            <a href="/fixtures" class="btn">Back to Fixtures</a>
     </div>
 
 </section>

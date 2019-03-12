@@ -3,6 +3,7 @@
     grid-template-columns: 7rem repeat(10, 1fr) 7rem;
     grid-template-rows: auto;
     position: relative;
+    background: lighten($color: lightgrey, $amount: 50%);
 }
 
 .banner {

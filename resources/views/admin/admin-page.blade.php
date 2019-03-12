@@ -43,7 +43,7 @@ Drumcondra FC Admin Panel
                             </a>
                         </td>
                         <td>
-                            {{$article->updated_at}}
+                            {{$article->updated_at->toFormattedDateString()}}
                         </td>
                         <td>
                         <a href="/admin/{{$article->id}}/edit">Edit</a>
@@ -87,7 +87,7 @@ Drumcondra FC Admin Panel
                                     </a>
                                 </td>
                                 <td>
-                                    {{$fix->updated_at->diffForHumans()}}
+                                    {{$fix->updated_at->toFormattedDateString()}}
                                 </td>
                                 <td>
                                 <a href="admin/fixtures/{{$fix->id}}/editnewfixtures">Edit</a>
@@ -107,7 +107,7 @@ Drumcondra FC Admin Panel
 
             </p>
 
-            <p class="admin-area-fixtures-results">
+            {{-- <p class="admin-area-fixtures-results">
                 <h1>Weekly Results</h1>
                 <a href="/admin/createresults">
                     <h2>Add Weeks Results</h2>
@@ -146,7 +146,7 @@ Drumcondra FC Admin Panel
                         </tbody>
                     </table>
                 
-            </p>
+            </p> --}}
             <p class="admin-area-fixtures-featured_fixture">
                 <h1>Featured Fixture</h1>
                 <a href="/admin/createfeaturedfixture">
@@ -166,7 +166,7 @@ Drumcondra FC Admin Panel
                                 {{$fix->home_team}} v's {{$fix->away_team}}
                                 </td>
                                 <td>
-                                    {{$fix->updated_at}}
+                                    {{$fix->updated_at->toFormattedDateString()}}
                                 </td>
                                 <td>
                                 <a href="admin/featuredfixture/{{$fix->id}}/editfeaturedfixture">Edit</a>
@@ -203,7 +203,7 @@ Drumcondra FC Admin Panel
                                 {{$res->home_team}} v's {{$res->away_team}}
                                 </td>
                                 <td>
-                                    {{$res->updated_at}}
+                                    {{$res->updated_at->toFormattedDateString()}}
                                 </td>
                                 <td>
                                 <a href="admin/featuredresult/{{$res->id}}/editfeaturedresult">Edit</a>

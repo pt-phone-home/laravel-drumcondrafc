@@ -17,7 +17,7 @@ Route::get('/newsitem/{id}', 'PagesController@newsitem');
 Route::get('/about', 'PagesController@about');
 Route::get('/findus', 'PagesController@findus');
 Route::get('/fixtures', 'PagesController@fixtures');
-Route::get('/fixtureitem/{id}', 'PagesController@fixtureitem');
+Route::get('/newfixtureitem/{id}', 'PagesController@fixtureitem');
 Route::get('/results', 'PagesController@results');
 Route::get('/resultsitem/{id}', 'PagesController@resultsitem');
 Route::get('/members', 'PagesController@members');
@@ -48,7 +48,7 @@ Route::get('admin/createnewfixtures', 'NewFixturesController@create')->middlewar
 Route::post('admin/createnewfixtures', 'NewFixturesController@store')->middleware('auth');
 Route::get('admin/fixtures/{id}/editnewfixtures', 'NewFixturesController@edit')->middleware('auth');
 Route::put('admin/fixtures/{id}', 'NewFixturesController@update');
-Route::get('/newfixturesitem/{id}', 'NewFixturesController@show');
+Route::get('/newfixturesitem/{id}', 'NewFixturesController@show')->name('fixture.item');
 Route::delete('/admin/fixtures/{id}', 'NewFixturesController@destroy')->middleware('auth');
 
 Route::get('admin/createresults', 'ResultsController@create')->middleware('auth');

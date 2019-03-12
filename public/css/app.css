@@ -1122,6 +1122,17 @@ body {
   align-items: center;
 }
 
+.card-content h4 {
+  background: #2a3075;
+  color: #f9ec37;
+  width: 100%;
+  text-align: center;
+}
+
+.card-content * {
+  padding: 0.5rem 1rem;
+}
+
 .card-content-plain {
   grid-template-columns: 1fr;
   overflow: none;
@@ -1129,8 +1140,8 @@ body {
   word-wrap: break-word;
 }
 
-.card-content-plain p {
-  padding: 0rem 1rem;
+.card-content-plain * {
+  padding: 0.5rem 1rem;
 }
 
 .card-action {
@@ -1276,11 +1287,23 @@ body {
   height: 3rem;
 }
 
+@media (max-width: 500px) {
+  .contact-form .form-group input {
+    width: 90%;
+  }
+}
+
 .contact-form .form-group textarea {
   margin: 1rem 1rem;
   font-size: 1.5rem;
   display: block;
   width: 70%;
+}
+
+@media (max-width: 500px) {
+  .contact-form .form-group textarea {
+    width: 90%;
+  }
 }
 
 .contact-form .submit {
@@ -1475,6 +1498,10 @@ body {
             transform: scale(1);
     margin-left: 1rem;
   }
+}
+
+.contact_email {
+  margin: 2rem 0rem;
 }
 
 .findus-container {
@@ -1978,7 +2005,7 @@ body {
 
 .header .nav2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   font-size: 1.3rem;
 }
 
@@ -2167,6 +2194,7 @@ body {
   grid-template-columns: 7rem repeat(10, 1fr) 7rem;
   grid-template-rows: auto;
   position: relative;
+  background: white;
 }
 
 .banner {
@@ -3221,6 +3249,11 @@ body {
   background-color: #f4f5fb;
 }
 
+.news-item-content * {
+  padding: 0.5rem 1rem;
+  line-height: 20px;
+}
+
 .news-item-footer {
   grid-row: 4/5;
   display: grid;
@@ -3267,6 +3300,8 @@ body {
   grid-row: 2/3;
   width: 100%;
   margin-top: 0.5rem;
+  background: #b8bce6;
+  padding: 1rem 2rem;
 }
 
 .news-item-full-img img {
@@ -3282,6 +3317,11 @@ body {
   overflow: hidden;
   font-size: 1.4rem;
   padding: 1rem 1rem;
+}
+
+.news-item-full-content * {
+  padding: 0.5rem 1rem;
+  line-height: 20px;
 }
 
 .news-item-full-footer {
