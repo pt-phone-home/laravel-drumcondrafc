@@ -94,7 +94,11 @@ Welcome To Drumcondra FC: One Club - One Community
             @endforeach
             <div class="fixture2">
                 <h1>
-                    Featured Result
+                    @foreach ($featured_results as $res)
+                       Featured Result
+                    {{-- <a href="#" alt="More Fixtures and Results"> --}}
+                        <i class="fas fa-forward"></i>
+                    </a>
                 </h1>
                 <div class="card card-small navy white-text border-top-yellow">
                     <div class="card-header">
