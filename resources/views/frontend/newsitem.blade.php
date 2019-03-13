@@ -15,7 +15,7 @@
     <div class="section-newsitem">
         @if ($article)
         <div class="news-item-full">
-            <h1>
+            <h1 class="news-item-full-title">
                 {{$article->title}}
             </h1>
 

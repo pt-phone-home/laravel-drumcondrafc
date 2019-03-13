@@ -133,7 +133,7 @@
     display: grid;
     // grid-template-rows: 5rem 25rem 40rem;
 
-    h1 {
+    &-title {
         margin-top: 1rem;
         padding-left: 1rem;
         background-color: $color-primary;
