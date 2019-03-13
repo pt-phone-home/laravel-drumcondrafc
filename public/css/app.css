@@ -3214,7 +3214,6 @@ body {
   box-shadow: 6px 6px 5px -2px rgba(0, 0, 0, 0.18);
   background-color: #edeef9;
   display: grid;
-  grid-template-rows: 5rem 20rem 15rem 3rem;
 }
 
 .news-item h1 {
@@ -3229,8 +3228,9 @@ body {
 
 .news-item-img {
   grid-row: 2/3;
+  height: 20rem;
   width: 100%;
-  margin-top: 0.5rem;
+  margin: 0.5rem;
 }
 
 .news-item-img img {
@@ -3283,7 +3283,6 @@ body {
   position: relative;
   box-shadow: 6px 6px 5px -2px rgba(0, 0, 0, 0.18);
   display: grid;
-  grid-template-rows: 5rem 25rem 40rem;
 }
 
 .news-item-full h1 {
@@ -3299,7 +3298,8 @@ body {
 .news-item-full-img {
   grid-row: 2/3;
   width: 100%;
-  margin-top: 0.5rem;
+  height: 25rem;
+  margin: 1rem 0rem;
   background: #b8bce6;
   padding: 1rem 2rem;
 }

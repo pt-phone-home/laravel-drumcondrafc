@@ -25,7 +25,7 @@ News - Drumcondra FC
                 @endif
             </div>
             <div class="news-item-content">
-                {!! str_limit($article->content, $limit = 400, $end = '...') !!}
+                {!! str_limit($article->content, $limit = 300, $end = '...') !!}
             </div>
             <div class="news-item-footer">
                 <a href="/newsitem/{{$article->id}}">Read More</a>
