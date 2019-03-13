@@ -14,7 +14,7 @@ News - Drumcondra FC
     <div class="section-news">
         @foreach ($articles as $article)
         <div class="news-item">
-            <h1>
+            <h1 class="news-item-title">
                 {{$article->title}}
             </h1>
             <div class="news-item-img">
