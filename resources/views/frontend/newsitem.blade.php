@@ -27,9 +27,9 @@
                 @endif
             </div>
             <div class="news-item-full-content">
-                <p>
+                
                     {!!$article->content!!}
-                </p>
+                
             </div>
             <div class="news-item-full-footer">
                 <a href="/news">Back to news</a>
