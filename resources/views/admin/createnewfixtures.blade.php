@@ -36,13 +36,13 @@
                                 <td><strong>Saturday</strong></td>
                             </tr>
                             <tr>
-                                {{-- <td></td>
+                                <td></td>
                                 <td>U8 Navy</td>
                                 <td><input type="text" name="u8_navy_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
                                 <td><input type="text" name="u8_navy_opposition"></td>
                                 <td><input type="text" name="u8_navy_venue"></td>
-                                <td><input type="text" name="u8_navy_start"></td> --}}
+                                <td><input type="text" name="u8_navy_start"></td>
 
                             </tr>
                             <tr>

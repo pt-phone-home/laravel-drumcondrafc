@@ -49,14 +49,20 @@
     grid-column: 1 / -1;
     display: grid;
     background: lighten($color: $color-primary, $amount: 40%);
+
+    min-width: 65rem;
 }
 
 .fixtures-item {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 80%;
+    width: 90%;
     justify-self: center;
     display: grid;
+
+    @media (max-width: 1000px) {
+        min-width: 65rem;
+    }
 
     &_heading {
         padding-top: 2rem;
@@ -75,6 +81,13 @@
     justify-self: center;
     border: 3px solid $color-primary;
 
+    @media (max-width: 1200px) {
+        width: 90%;
+    }
+    @media (max-width: 1000px) {
+        min-width: 65rem;
+    }
+
     tr {
         height: 2.6rem;
     }
@@ -86,6 +99,10 @@
     tbody {
         tr:nth-child(odd) {
             background: lightgray;
+        }
+
+        tr:nth-child(even) {
+            background: darkgray;
         }
     }
 
