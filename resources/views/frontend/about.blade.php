@@ -132,9 +132,14 @@ About Drumcondra FC: One Club - One Community
                     <td>085 749 7402</td>
                 </tr>
                 <tr>
-                    <td>U8 Navy (Sat)</td>
+                    <td>U8 Navy</td>
                     <td>Willie Patten</td>
                     <td>086 383 5926</td>
+                </tr>
+                <tr>
+                    <td>U8 Navy (Sat)</td>
+                    <td>Stephen Brazil</td>
+                    <td>086 810 1108</td>
                 </tr>
 
             </table>

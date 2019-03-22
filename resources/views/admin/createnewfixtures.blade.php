@@ -86,15 +86,15 @@
                             <tr>
                                 <td><strong> Sunday </strong></td>
                             </tr>
-                            {{-- <tr> 
+                            <tr> 
                                 <td></td>
-                                <td>U8 </td>
+                                <td>U8 Navy (Sunday)</td>
                                 <td><input type="text" name="u8_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
                                 <td><input type="text" name="u8_opposition"></td>
                                 <td><input type="text" name="u8_venue"></td>
                                 <td><input type="text" name="u8_start"></td>
-                            </tr> --}}
+                            </tr>
                             <tr> 
                                 <td></td>
                                 <td>U10 A</td>

@@ -88,7 +88,7 @@
                     </tr>
                     <tr> 
                         <td></td>
-                        <td>U8 </td>
+                        <td>U8 Navy (Sunday)</td>
                         <td>{{$fixtures->u8_homeoraway}}</td>
                         <td><strong>Vs</strong></td>
                         <td>{{$fixtures->u8_opposition}}</td>
