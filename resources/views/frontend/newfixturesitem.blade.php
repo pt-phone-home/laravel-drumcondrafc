@@ -97,7 +97,7 @@
                     </tr>
                     <tr> 
                         <td></td>
-                        <td>U10 A</td>
+                        <td>U10 A1</td>
                         <td>{{$fixtures->u10_a_homeoraway}}</td>
                         <td><strong>Vs</strong></td>
                         <td>{{$fixtures->u10_a_opposition}}</td>
