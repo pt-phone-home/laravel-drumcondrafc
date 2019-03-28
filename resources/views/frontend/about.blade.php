@@ -127,7 +127,7 @@ About Drumcondra FC: One Club - One Community
                     <td>086 048 0767</td>
                 </tr>
                 <tr>
-                    <td>U10 A</td>
+                    <td>U10 A1</td>
                     <td>Derek Sugden</td>
                     <td>085 749 7402</td>
                 </tr>
