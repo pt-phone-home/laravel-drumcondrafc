@@ -66,7 +66,7 @@
                         <td><strong>Vs</strong></td>
                         <td>{{$fixtures->seniors_1_opposition}}</td>
                         <td>{{$fixtures->seniors_1_venue}}</td>
-                        <td><{{$fixtures->seniors_1_start}}</td>
+                        <td>{{$fixtures->seniors_1_start}}</td>
                     </tr>
                     <tr> 
                         <td></td>
