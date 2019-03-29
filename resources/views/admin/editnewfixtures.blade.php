@@ -37,13 +37,13 @@
                                 <td><strong>Saturday</strong></td>
                             </tr>
                             <tr>
-                                {{-- <td></td>
+                                <td></td>
                                 <td>U8 Navy</td>
                                 <td><input type="text" name="u8_navy_homeoraway" value="{{$fixtures->u8_navy_homeoraway}}"></td>
                                 <td><strong>Vs</strong></td>
                                 <td><input type="text" name="u8_navy_opposition" value="{{$fixtures->u8_navy_opposition}}"></td>
                                 <td><input type="text" name="u8_navy_venue" value="{{$fixtures->u8_navy_venue}}"></td>
-                                <td><input type="text" name="u8_navy_start" value="{{$fixtures->u8_navy_start}}"></td> --}}
+                                <td><input type="text" name="u8_navy_start" value="{{$fixtures->u8_navy_start}}"></td>
 
                             </tr>
                             <tr>
@@ -89,7 +89,7 @@
                             </tr>
                             <tr> 
                                 <td></td>
-                                <td>U8 </td>
+                                <td>U8 Navy (Sunday)</td>
                                 <td><input type="text" name="u8_homeoraway" value="{{$fixtures->u8_homeoraway}}"></td>
                                 <td><strong>Vs</strong></td>
                                 <td><input type="text" name="u8_opposition" value="{{$fixtures->u8_opposition}}"></td>
