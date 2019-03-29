@@ -19,7 +19,7 @@
                 @endif
                 <div class="form-group">
                     <label for="title">News Title:</label>
-                    <input type="text" name="title" id="title" placeholder="Article Title" required>
+                    <input type="text" name="title" id="title" placeholder="Article Title" max=50 required>
                 </div>
                 <div class="form-group">
                     <label for="headline">Headline:</label>
