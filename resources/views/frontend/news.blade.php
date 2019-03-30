@@ -15,7 +15,7 @@ News - Drumcondra FC
         @foreach ($articles as $article)
         <div class="news-item">
             <h1 class="news-item-title">
-                {{ str_limit($article->title, $limit = 50, $end = '...')}}
+                {{ str_limit($article->title, $limit = 70, $end = '...')}}
             </h1>
             <div class="news-item-img">
                 @if ($article->img)

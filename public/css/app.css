@@ -3277,7 +3277,11 @@ body {
 
 .news-item-content * {
   padding: 0.5rem 1rem;
-  line-height: 20px;
+  line-height: 1.4;
+}
+
+.news-item-content h1 {
+  line-height: 1.4;
 }
 
 .news-item-footer {
@@ -3348,6 +3352,10 @@ body {
 .news-item-full-content * {
   padding: 0.5rem 1rem;
   line-height: 20px;
+}
+
+.news-item-full-content h1 {
+  line-height: 1.4;
 }
 
 .news-item-full-footer {

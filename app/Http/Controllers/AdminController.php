@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
 use App\Article;
 use App\FeaturedFixture;
 use App\FeaturedResults;
-use App\Fixture;
-use App\Result;
 use App\NewFixtures;
+use App\Result;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
-    public function index() {
+    public function index()
+    {
 
         $articles = Article::orderBy('updated_at', 'DESC')->get();
         $featured_fixtures = FeaturedFixture::all();
@@ -26,18 +26,19 @@ class AdminController extends Controller
             'featured_fixtures' => $featured_fixtures,
             'featured_results' => $featured_results,
             'fixtures' => $fixtures,
-            'results' => $results
+            'results' => $results,
         ]);
     }
 
-    public function loginview() {
-
+    public function loginview()
+    {
 
         return view('admin.login');
 
     }
 
-    public function login(Request $request) {
+    public function login(Request $request)
+    {
 
         $credentials = $request->only('email', 'password');
 
@@ -50,28 +51,30 @@ class AdminController extends Controller
             return redirect()->back()->with('failed', 'Sorry your details are not correct');
         }
 
-
     }
 
-    public function logout() {
+    public function logout()
+    {
 
         Auth::logout();
 
         return redirect('login')->with('success', 'You are logged out');
     }
 
-    public function create() {
+    public function create()
+    {
 
         return view('admin.createarticle');
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
 
         $this->validate($request, [
             'title' => 'required|min:3|max:100',
-            'headline' => 'required|min:5|max:100',
+            'headline' => 'required|min:5|max:70',
             'content' => 'required',
-            'img' => 'image'
+            'img' => 'image',
         ]);
 
         if ($request->file('img')) {
@@ -83,7 +86,6 @@ class AdminController extends Controller
         } else {
             $path = 'images/uploads/default' . rand(1, 4) . '.jpg';
         }
-        
 
         $article = new Article;
         $article->title = $request['title'];
@@ -97,20 +99,22 @@ class AdminController extends Controller
 
     }
 
-    public function edit($id) {
+    public function edit($id)
+    {
 
         $article = Article::find($id);
 
         return view('admin.edit')->with('article', $article);
     }
 
-    public function update(Request $request, $id) {
+    public function update(Request $request, $id)
+    {
 
         $this->validate($request, [
             'title' => 'required|min:3|max:100',
             'headline' => 'required|min:5|max:100',
             'content' => 'required',
-            'img' => 'image'
+            'img' => 'image',
         ]);
 
         if ($request->file('img')) {
@@ -120,7 +124,7 @@ class AdminController extends Controller
             $filenameToStore = $filename . '_' . time() . '.' . $extension;
             $path = $request->file('img')->move('/images/uploads', $filenameToStore);
         } else {
-            $path = 'images/uploads/default' . rand(1, 4). '.jpg';
+            $path = 'images/uploads/default' . rand(1, 4) . '.jpg';
         }
 
         $article = Article::find($id);
@@ -135,7 +139,8 @@ class AdminController extends Controller
         return redirect('/admin')->with('success', 'Article Updated');
     }
 
-    public function destroy($id) {
+    public function destroy($id)
+    {
 
         $article = Article::find($id);
 
@@ -143,6 +148,5 @@ class AdminController extends Controller
 
         return redirect('/admin');
     }
-
 
 }
