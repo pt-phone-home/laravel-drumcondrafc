@@ -2,39 +2,38 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\NewFixtures;
+use Illuminate\Http\Request;
 
 class NewFixturesController extends Controller
 {
-
-    public function show($id) {
-
+    public function show($id)
+    {
         $fixtures = NewFixtures::find($id);
 
         return view('frontend.newfixturesitem')->with('fixtures', $fixtures);
-
     }
-    public function create() {
+    public function create()
+    {
         return view('admin.createnewfixtures');
     }
 
-    public function store(Request $request) {
-
+    public function store(Request $request)
+    {
         $this->validate($request, [
             'week_start' => 'required',
-            
+
         ]);
 
         $fixtures = new NewFixtures;
-            
+
         $fixtures->week_start = $request['week_start'];
         $fixtures->u8_navy_homeoraway = $request['u8_navy_homeoraway'];
         $fixtures->u8_navy_opposition = $request['u8_navy_opposition'];
         $fixtures->u8_navy_venue = $request['u8_navy_venue'];
         $fixtures->u8_navy_start = $request['u8_navy_start'];
 
+        // now U10C1
         $fixtures->u10d_homeoraway = $request['u10d_homeoraway'];
         $fixtures->u10d_opposition = $request['u10d_opposition'];
         $fixtures->u10d_venue = $request['u10d_venue'];
@@ -94,7 +93,7 @@ class NewFixturesController extends Controller
         $fixtures->u11_d_opposition = $request['u11_d_opposition'];
         $fixtures->u11_d_venue = $request['u11_d_venue'];
         $fixtures->u11_d_start = $request['u11_d_start'];
-    
+
         $fixtures->u11_e1_homeoraway = $request['u11_e1_homeoraway'];
         $fixtures->u11_e1_opposition = $request['u11_e1_opposition'];
         $fixtures->u11_e1_venue = $request['u11_e1_venue'];
@@ -104,7 +103,7 @@ class NewFixturesController extends Controller
         $fixtures->u12_1_opposition = $request['u12_1_opposition'];
         $fixtures->u12_1_venue = $request['u12_1_venue'];
         $fixtures->u12_1_start = $request['u12_1_start'];
-    
+
         $fixtures->u12_4_homeoraway = $request['u12_4_homeoraway'];
         $fixtures->u12_4_opposition = $request['u12_4_opposition'];
         $fixtures->u12_4_venue = $request['u12_4_venue'];
@@ -133,26 +132,25 @@ class NewFixturesController extends Controller
         $fixtures->save();
 
         return redirect('/admin')->with('success', 'Fixtures Added');
-
     }
 
-    public function edit($id) {
-
+    public function edit($id)
+    {
         $fixtures = NewFixtures::find($id);
 
         return view('admin.editnewfixtures')->with('fixtures', $fixtures);
-
     }
 
-    public function update(Request $request, $id) {
+    public function update(Request $request, $id)
+    {
 
         // $this->validate($request, [
         //     'week_start' => 'required',
-            
+
         // ]);
 
         $fixtures = NewFixtures::find($id);
-            
+
         $fixtures->week_start = $request['week_start'];
         $fixtures->u8_navy_homeoraway = $request['u8_navy_homeoraway'];
         $fixtures->u8_navy_opposition = $request['u8_navy_opposition'];
@@ -218,7 +216,7 @@ class NewFixturesController extends Controller
         $fixtures->u11_d_opposition = $request['u11_d_opposition'];
         $fixtures->u11_d_venue = $request['u11_d_venue'];
         $fixtures->u11_d_start = $request['u11_d_start'];
-    
+
         $fixtures->u11_e1_homeoraway = $request['u11_e1_homeoraway'];
         $fixtures->u11_e1_opposition = $request['u11_e1_opposition'];
         $fixtures->u11_e1_venue = $request['u11_e1_venue'];
@@ -228,7 +226,7 @@ class NewFixturesController extends Controller
         $fixtures->u12_1_opposition = $request['u12_1_opposition'];
         $fixtures->u12_1_venue = $request['u12_1_venue'];
         $fixtures->u12_1_start = $request['u12_1_start'];
-    
+
         $fixtures->u12_4_homeoraway = $request['u12_4_homeoraway'];
         $fixtures->u12_4_opposition = $request['u12_4_opposition'];
         $fixtures->u12_4_venue = $request['u12_4_venue'];
@@ -257,15 +255,14 @@ class NewFixturesController extends Controller
         $fixtures->save();
 
         return redirect('/admin')->with('success', 'Fixtures Updated');
-
-
     }
 
-    public function destroy($id) {
+    public function destroy($id)
+    {
         $fixtures = NewFixtures::find($id);
 
         $fixtures->delete();
 
         return redirect('/admin')->with('success', 'Fixtures Delete');
-    } 
+    }
 }

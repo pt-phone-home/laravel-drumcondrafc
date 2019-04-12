@@ -43,7 +43,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>U10 D</td>
+                        <td>U10 C1</td>
                         <td>{{$fixtures->u10d_homeoraway}}</td>
                         <td><strong>Vs</strong></td>
                         <td>{{$fixtures->u10d_opposition}}</td>

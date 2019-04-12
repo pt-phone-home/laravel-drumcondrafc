@@ -47,7 +47,7 @@
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>U10 D</td>
+                                <td>U10 C1</td>
                                 <td><input type="text" name="u10d_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
                                 <td><input type="text" name="u10d_opposition"></td>
