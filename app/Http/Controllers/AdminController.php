@@ -14,7 +14,6 @@ class AdminController extends Controller
 {
     public function index()
     {
-
         $articles = Article::orderBy('updated_at', 'DESC')->get();
         $featured_fixtures = FeaturedFixture::all();
         $featured_results = FeaturedResults::all();
@@ -32,14 +31,11 @@ class AdminController extends Controller
 
     public function loginview()
     {
-
         return view('admin.login');
-
     }
 
     public function login(Request $request)
     {
-
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
@@ -47,15 +43,12 @@ class AdminController extends Controller
 
             return redirect()->intended('/admin');
         } else {
-
             return redirect()->back()->with('failed', 'Sorry your details are not correct');
         }
-
     }
 
     public function logout()
     {
-
         Auth::logout();
 
         return redirect('login')->with('success', 'You are logged out');
@@ -63,13 +56,11 @@ class AdminController extends Controller
 
     public function create()
     {
-
         return view('admin.createarticle');
     }
 
     public function store(Request $request)
     {
-
         $this->validate($request, [
             'title' => 'required|min:3|max:100',
             'headline' => 'required|min:5|max:70',
@@ -96,12 +87,10 @@ class AdminController extends Controller
         $article->save();
 
         return redirect('/admin')->with('success', 'Article created successfully');
-
     }
 
     public function edit($id)
     {
-
         $article = Article::find($id);
 
         return view('admin.edit')->with('article', $article);
@@ -109,30 +98,28 @@ class AdminController extends Controller
 
     public function update(Request $request, $id)
     {
-
         $this->validate($request, [
             'title' => 'required|min:3|max:100',
             'headline' => 'required|min:5|max:100',
             'content' => 'required',
-            'img' => 'image',
+            // 'img' => 'image',
         ]);
+
+        $article = Article::find($id);
 
         if ($request->file('img')) {
             $filenameWithExt = $request->file('img')->getClientOriginalName();
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('img')->getClientOriginalExtension();
             $filenameToStore = $filename . '_' . time() . '.' . $extension;
-            $path = $request->file('img')->move('/images/uploads', $filenameToStore);
-        } else {
-            $path = 'images/uploads/default' . rand(1, 4) . '.jpg';
-        }
+            $path = $request->file('img')->move('images/uploads', $filenameToStore);
 
-        $article = Article::find($id);
+            $article->img = $path;
+        }
 
         $article->title = $request['title'];
         $article->headline = $request['headline'];
         $article->content = $request['content'];
-        $article->img = $path;
 
         $article->save();
 
@@ -141,12 +128,10 @@ class AdminController extends Controller
 
     public function destroy($id)
     {
-
         $article = Article::find($id);
 
         $article->delete();
 
         return redirect('/admin');
     }
-
 }

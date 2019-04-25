@@ -66,7 +66,7 @@ Contact - Drumcondra A.F.C
                 <div class="member-pic">
                     <img src="/images/frank_connolly.png" class="avatar-lg" alt="">
                 </div>
-                <h3>Frank Conolly (Chair)</h3>
+                <h3>Frank Connolly (Chair)</h3>
                 <h3> 086 833 1909</h3>
             </div>
             <div class="member">

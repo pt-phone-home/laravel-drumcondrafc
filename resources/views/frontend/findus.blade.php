@@ -15,7 +15,7 @@
 
         <div class="locations-intro">
             <h2>Drumcondra A.F.C Pitch Locations</h2>
-            <p>The club uses 5 locations around Drumcondra. You will see these indicated on the map below. Click each of the markers
+            <p>The club uses 4 locations around Drumcondra. You will see these indicated on the map below. Click each of the markers
                 on the map for more information and to get directions to the relevant pitch.</p>
         </div>
 
@@ -46,12 +46,19 @@
                   long: -6.249513
               };
           
+            //   var griffith = {
+            //       info: '<strong>Griffith Park</strong><br>\r\
+            //               27 St Michael\'s Rd, Drumcondra, Dublin 9<br>\
+            //                   <a href="https://goo.gl/maps/XzYG8ejjJDU2" target="_blank">Get Directions</a>',
+            //       lat: 53.370231,
+            //       long: -6.262120
+            //   };
               var griffith = {
-                  info: '<strong>Griffith Park</strong><br>\r\
-                          27 St Michael\'s Rd, Drumcondra, Dublin 9<br>\
-                              <a href="https://goo.gl/maps/XzYG8ejjJDU2" target="_blank">Get Directions</a>',
-                  lat: 53.370231,
-                  long: -6.262120
+                  info: '<strong>St. Patrick\'s College</strong><br>\r\
+                          Drumcondra Road Upper, Drumcondra, Dublin 9<br>\
+                              <a href="https://goo.gl/maps/8DX1xnQWfhqyfNCJ7" target="_blank">Get Directions</a>',
+                  lat: 53.370821,
+                  long: -6.254604
               };
           
               var albert = {
