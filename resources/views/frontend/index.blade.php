@@ -244,11 +244,12 @@ Welcome To Drumcondra FC: One Club - One Community
                         <a href="http://www.rocketchipwebsolutions.ie" target="_blank"><img src="/images/color_logo_transparent.png" alt=""></a>
                     </div>
 				</div>
-				<div class="card border-navy">
-					Sponsor Two
+				<div class="card border-navy sponsor-card">
+					<div class="sponsor-card-img">
+                        <a href="http://www.catandcage.ie/" target="_blank"><img src="/images/catandcage.png" alt=""></a>
+                    </div>
 				</div>
 				<div class="card border-navy">
-					Sponsor Three
 				</div>
 
 			</div>

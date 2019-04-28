@@ -2598,7 +2598,7 @@ body {
 .sponsor-card-img img {
   -o-object-fit: contain;
      object-fit: contain;
-  max-height: 10rem;
+  max-height: 20rem;
   width: 100%;
 }
 
