@@ -2,29 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use App\Notifications\InboxMessage;
-use App\Http\Requests\ContactFormRequest;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Pagination\LengthAwarePaginator;
-use Illuminate\Pagination\Paginator;
-
 use App\Article;
 use App\FeaturedFixture;
 use App\FeaturedResults;
 use App\Fixture;
+use App\Mail;
+use App\Mail\MailCreated;
 use App\NewFixtures;
 use App\Result;
-use App\Mail;
-use App\Mail\ProjectCreated;
-use App\Mail\MailCreated;
+use Illuminate\Http\Request;
+
 //use Illuminate\Support\Facades\Mail;
 
 class PagesController extends Controller
 {
-    public function index() {
-
+    public function index()
+    {
         $articles = Article::orderBy('updated_at', 'DESC')->take(6)->get();
         $featured_articles = Article::orderBy('updated_at', 'DESC')->take(3)->get();
         $featured_fixtures = FeaturedFixture::orderBy('updated_at', 'DESC')->take(1)->get();
@@ -41,75 +34,82 @@ class PagesController extends Controller
             'featured_results' => $featured_results]);
     }
 
-    public function news() {
-
+    public function news()
+    {
         $articles = Article::orderBy('updated_at', 'DESC')->paginate(5);
         //Paginate(10);
 
         return view('frontend.news')->with('articles', $articles);
-
     }
 
-    public function newsitem($id) {
-
+    public function newsitem($id)
+    {
         $article = Article::findOrFail($id);
 
         return view('frontend.newsitem')->with('article', $article);
     }
 
-    public function about() {
-        
+    public function about()
+    {
         return view('frontend.about');
     }
 
-    public function findus() {
-
+    public function findus()
+    {
         return view('frontend.findus');
     }
 
-    public function fixtures() {
-
+    public function fixtures()
+    {
         $fixtures = NewFixtures::all();
 
         return view('frontend.fixtures')->with('fixtures', $fixtures);
     }
 
-    public function fixtureitem($id) {
-
+    public function fixtureitem($id)
+    {
         $fixture = Fixture::findOrFail($id);
 
         return view('frontend.fixtureitem')->with('fixture', $fixture);
     }
 
-    public function results() {
-
+    public function results()
+    {
         $results = Result::all();
 
         return view('frontend.results')->with('results', $results);
     }
 
-    public function resultsitem($id) {
+    public function resultsitem($id)
+    {
         $result = Result::findOrFail($id);
 
         return view('frontend.resultsitem')->with('result', $result);
     }
 
-    public function members() {
-
+    public function members()
+    {
         return view('frontend.members');
     }
 
-    public function gallery() {
-
+    public function gallery()
+    {
         return view('frontend.gallery');
     }
 
-    public function contact() {
-
+    public function contact()
+    {
         return view('frontend.contact');
     }
 
-    public function sendEmail(Request $request) {
+    public function sendEmail(Request $request)
+    {
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'email|required',
+            'message' => 'required|min:10',
+            'g-recaptcha-response' => 'required|captcha',
+        ]);
 
         $email = new Mail;
 
@@ -121,7 +121,7 @@ class PagesController extends Controller
         // dd($email);
 
         \Mail::to('jacintadrumcondra1@gmail.com')->send(
-                new MailCreated($email)
+            new MailCreated($email)
         );
         return redirect('/contact')->with('mail', 'Thanks for getting in touch');
     }

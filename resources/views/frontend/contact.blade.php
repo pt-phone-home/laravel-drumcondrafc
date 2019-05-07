@@ -24,35 +24,40 @@ Contact - Drumcondra A.F.C
                 <form method="POST" class="contact-form" action="/contact">
                     @csrf
 
-                    <?php if (! empty($errors)) :?>
+                   @if ($errors->count() > 0)
                     <ul>
-                        <?php foreach ($errors as $err) :?>
-                        <li>
-                            <?=$err ;?>
+                        @foreach ($errors->all() as $err)
+                        <li style="list-style: none; font-size: 1.6rem; color: red;">
+                            {{$err}}
                         </li>
-                        <?php endforeach ;?>
+                        @endforeach
                     </ul>
-                    <?php endif ;?>
+                  @endif
                     
                     @include('inc.messages')
 
                     <div class="form-group">
                         <label for="name">Name:</label>
                     <input type="text" placeholder="Your Name" id="name" name="name"
-                         required>
+                    required value="{{old('name')}}">
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
                         <input type="email" placeholder="Your Email" name="email" id="email" 
-                         required>
+                    required value="{{old('email')}}">
                     </div>
                     <div class="form-group">
                         <label for="teamName">Team Name: (Optional)</label>
-                        <input type="text" name="teamName" id="teamName" >
+                    <input type="text" name="teamName" id="teamName" value="{{old('teamName')}}">
                     </div>
                     <div class="form-group">
                         <label for="message" class="message-label">Message:</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required>{{old('message')}}</textarea>
+                    </div>
+                    <div class="form-group">
+                            <label for="ReCaptcha"> Please check the box below before sending message </label>
+                            {!! NoCaptcha::renderJs(array('required' => 'required')) !!}
+                            {!! NoCaptcha::display() !!}
                     </div>
                     <input type="submit" value="Send" class="submit">
                     
