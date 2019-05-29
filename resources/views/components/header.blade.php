@@ -36,6 +36,9 @@
             <li>
                 <a href="/contact">Contact</a>
             </li>
+            <li>
+                <a href="https://www.umbro.ie/club-shop/drumcondra-afc" target="_blank"><i class="fas fa-shopping-cart"></i> Shop</a>
+            </li>
         </div>
     
         <div class="sidenav-btn">
@@ -68,6 +71,9 @@
         </li>
         <li>
             <a href="/contact">Contact</a>
+        </li>
+        <li>
+            <a href="https://www.umbro.ie/club-shop/drumcondra-afc" target="_blank"><i class="fas fa-shopping-cart"></i> Shop</a>
         </li>
         <div class="sidebar-nav-close">
             &times;
