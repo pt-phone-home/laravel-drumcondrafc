@@ -81,16 +81,17 @@ Members - Drumcondra A.F.C
                 <i class="far fa-credit-card"></i>
             </div>
             <div class="members-sections-payment-body">
-                <p>Our new electronic payment system is now up and running. We are using the same company used by other clubs in Drumcondra
-                    so your login might already exists.</p>
+                <p>Our new electronic payment system is now up and running.</p>
                 <br>
-                <p>First click on the button ‘Pay Now’ as it will bring you to a Safe easypaymentsplus.ie website. On the link belw you
-                    will find a comprehensive guide on how to register and make the payment.
+                <p>First click on the button ‘Register Now', it will bring you to a safe clubforce website. From here, follow the instructions on screen to make your payment.
                     <br>
                     <br>
 
-                    <a href="https://pay.easypaymentsplus.com/feepay1v2.aspx?id=931" target="_blank">
+                    {{-- <a href="https://pay.easypaymentsplus.com/feepay1v2.aspx?id=931" target="_blank">
                         <img src="/images/epp_pay_now_1.gif" alt="">
+                    </a> --}}
+                    <a href="https://member.clubforce.com/memberships_cart_m.asp?LL_ID=2041&clb=1" target="_blank">
+                        <img src="/images/pay_now.jpg" style="height: 9rem; width: auto;" alt="">
                     </a>
 
                 </p>
@@ -109,14 +110,14 @@ Members - Drumcondra A.F.C
                     <h1>Drumcondra AFC Data Protection Policy</h1>
                 </div>
                 <h2>Background</h2>
-    
+
                 <p>When Drumcondra AFC –the Club- collects annual membership subscriptions it collects data that helps it maintain its football
                     activities and related health and safety and club development activities. The Club will only ever look for necessary
                     information from members (and parents/guardians knowingly acting on behalf of a child under 18 years of age. Such information
                     will most usually be player name, date of birth, contact number/email and health conditions. </p>
-    
+
                 <p>Once the Club collects such information it is subject to Data Protection requirements set down in law (1988 and 2003).</p>
-    
+
                 <p> Data Protection laws place an onus on the Club to:
                     <br>
                     <br> Obtain and process information fairly;
@@ -130,9 +131,9 @@ Members - Drumcondra A.F.C
                         <li>Give a copy of his/her personal data to an individual when requested.</li>
                     </ol>
                 </p>
-    
+
                 <h2>General Considerations</h2>
-    
+
                 <p>The Club will provide the relevant Club coach with the given contact name and number of each player in order to facilitate
                     training and matches and, where necessary, other club activities. The Club cannot use the information for purposes other
                     than running the club. The Club will not pass your details to a third party, such as a private company, without your
@@ -153,10 +154,10 @@ Members - Drumcondra A.F.C
                     <br>
                     <br> The Club must ensure that all information provided with a membership payment made online is held by Easy Payments Plus
                     in accordance with Data Protection requirements.</p>
-    
-    
+
+
                 <h3>Breaches</h3>
-    
+
                 <p>A breach of Data Protection arises when an incident of risk of personal data being disclosed, lost, destroyed or altered
                     occurs.
                     <br>
@@ -169,34 +170,34 @@ Members - Drumcondra A.F.C
                     personal data, aim to limit damage and distress to those affected, compile a chronology of the events leading to the
                     loss and determine what measures can be taken to prevent repetition of the loss Keep a summary record of each incident
                     of loss and any reason for not informing the Office of the Data Protection Commissioner about the matter.</p>
-    
-    
+
+
                 <h3>Rights and Obligations of Members and their guardians </h3>
-    
+
                 <p>A member can request a copy of all of the information about them held by the Club in what is called a ‘Subject Access
                     Request’. Any such request must be made in writing. Each Request of the Club will incur a fee of €5. The Club must provide
                     the material sought in a Request within 40 days from the date of receipt of the Request. All members undertake to inform
                     the Club of any changes in personal data of relevance to club membership. A member has the right to correct, modify or
                     remove the personal information the Club holds about them. All such requests must be made in writing and will not incur
                     a fee.</p>
-    
-    
+
+
                 <h3>Complaint Procedure</h3>
-    
+
                 <p>Where a member wishes to complain about a Data Protection issue the following mechanism has been put in place:
                     <br>
                     <br> A member will contact the Club (by email or in writing) setting out the complaint. This will list the (approximate)
                     date of the grievance, identify any Club personnel involved and what occurred. The Club will provide the member with
                     an initial response within 10 days. </p>
-    
-    
+
+
                 <h3>Queries</h3>
-    
+
                 <p>All queries about this policy should be directed to the Secretary of Chair of the Club whose details are posted on the
                     Contacts page of the Club website www.drumcondrafc.com.</p>
             </div>
         </div>
-    
+
         <div class="conduct-modal" id="conduct-modal">
             <div class="conduct-modal-content">
                 <span class="conduct-close">&times;</span>
@@ -204,15 +205,15 @@ Members - Drumcondra A.F.C
                     <h1>Code of Conduct</h1>
                 </div>
                 <h2>Overarching Statement</h2>
-    
+
                 <p>Drumcondra AFC, the Club, players, coaches, and guardians, strive to implement and encourage an approach to football activity
                     emphasising fair play. This is underpinned by the Club’s belief that enjoyment and growth are the primary rewards from
                     involvement in football at Drumcondra AFC.
                     <br>
                     <br> This code of conduct sets out the Club’s expectations of those coming together under its name. </p>
-    
-    
-    
+
+
+
                 <h3>Players </h3>
                 <ul>
                     <li>Respect the game and the rules by playing fairly.</li>
@@ -222,8 +223,8 @@ Members - Drumcondra A.F.C
                     <li>Act with dignity when representing Drumcondra AFC.</li>
                     <li>Never train or play a match if you feel unwell or injured.</li>
                 </ul>
-    
-    
+
+
                 <h3>Coaches</h3>
                 <ul>
                     <li>
@@ -251,10 +252,10 @@ Members - Drumcondra A.F.C
                         Be mindful of child welfare obligations including health of players during training and matches.
                     </li>
                 </ul>
-    
-    
+
+
                 <h3>Spectators</h3>
-    
+
                 <ul>
                     <li>
                         Respect Drumcondra AFC players and opponents, coaching teams, match officials and facilities.
@@ -272,10 +273,10 @@ Members - Drumcondra A.F.C
                         Act to minimise hurtful treatment, physical or verbal abuse of Club members, opponents, supporters and match officials.
                     </li>
                 </ul>
-    
-    
+
+
                 <h3>Parents/Guardians </h3>
-    
+
                 <ul>
                     <li>
                         Support players’ decisions to play football, to enjoy football and learn new skills among their peers.
@@ -293,10 +294,10 @@ Members - Drumcondra A.F.C
                         Assist the club to challenge negative behaviour directed at any person at training or matches.
                     </li>
                 </ul>
-    
-    
+
+
                 <h3>The Club</h3>
-    
+
                 <ul>
                     <li>
                         Undertakes to treat all coaches, parents and players with dignity.
@@ -314,11 +315,11 @@ Members - Drumcondra A.F.C
                         Aims to receive and process all complaints and concerns in a confidential, clear and fair manner.
                     </li>
                 </ul>
-    
+
             </div>
         </div>
 
-        <script> 
+        <script>
             const dataModal = document.querySelector("#data-modal");
 const dataBtn = document.querySelector(".data-modal-btn");
 const dataCloseBtn = document.querySelector(".data-close");
@@ -339,7 +340,7 @@ window.onclick = function(e) {
 
         </script>
 
-        <script> 
+        <script>
                 const conductModal = document.querySelector("#conduct-modal");
 const conductBtn = document.querySelector(".conduct-modal-btn");
 const conductCloseBtn = document.querySelector(".conduct-close");
@@ -360,7 +361,7 @@ window.onclick = function(e) {
         dataModal.style.display = "none";
     }
 };
-    
-            
+
+
         </script>
 @endsection
