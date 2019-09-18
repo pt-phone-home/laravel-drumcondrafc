@@ -13,18 +13,20 @@ Fixtures - Drumcondra A.F.C
     </div>
 
     <div class="fixtures">
-        @foreach($fixtures as $fix)
-        <div class="fixture_card">
-            <h3>Week Beginning :</h3>
-        <a href="{{route('fixture.item', ['id' => $fix->id])}}"> 
-                <h1>
-                    {{$fix->week_start}}
-                </h1>
-            </a>
-            <p>Click for a list of fixtures</p>
-            
-        </div>
-        @endforeach
+        @if ($fixtures)
+            @foreach($fixtures as $fix)
+            <div class="fixture_card">
+                <h3>Week Beginning :</h3>
+            <a href="{{route('fixture.item', ['id' => $fix->id])}}">
+                    <h1>
+                        {{$fix->week_start}}
+                    </h1>
+                </a>
+                <p>Click for a list of fixtures</p>
+
+            </div>
+            @endforeach
+        @endif
     </div>
 
 @endsection
