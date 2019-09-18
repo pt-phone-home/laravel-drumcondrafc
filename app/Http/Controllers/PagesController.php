@@ -6,6 +6,7 @@ use App\Article;
 use App\FeaturedFixture;
 use App\FeaturedResults;
 use App\Fixture;
+use App\Fixtures2019;
 use App\Mail;
 use App\Mail\MailCreated;
 use App\NewFixtures;
@@ -31,7 +32,8 @@ class PagesController extends Controller
             'featured_articles' => $featured_articles,
             'articles' => $articles,
             'featured_fixtures' => $featured_fixtures,
-            'featured_results' => $featured_results]);
+            'featured_results' => $featured_results
+        ]);
     }
 
     public function news()
@@ -61,14 +63,14 @@ class PagesController extends Controller
 
     public function fixtures()
     {
-        $fixtures = NewFixtures::all();
+        $fixtures = Fixtures2019::all();
 
         return view('frontend.fixtures')->with('fixtures', $fixtures);
     }
 
     public function fixtureitem($id)
     {
-        $fixture = Fixture::findOrFail($id);
+        $fixture = Fixtures2019::findOrFail($id);
 
         return view('frontend.fixtureitem')->with('fixture', $fixture);
     }

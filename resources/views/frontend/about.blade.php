@@ -22,7 +22,7 @@ About Drumcondra FC: One Club - One Community
 
                 <br><br>
                 The club have been variously known over the years as Drumcondra FC and Drumcondra AFC. However the name Drumcondra AFC lives on today with the fielding of 14 teams at various age groups from U8’s to adult in the Dublin & District Schoolboy League(DDSL), North Dublin Schoolboy League(NDSL) and the United Churches Football League(UCFL).
-                 
+
                 <br><br>
                 Our club still play in the traditional blue and gold/yellow strip and play from our base in Clonturk Park opposite our original home of Tolka Park in Drumcondra with other pitches in Griffith Park, Dominican College and Albert College Park.
             </p>
@@ -42,106 +42,110 @@ About Drumcondra FC: One Club - One Community
                     <th>Contact</th>
                 </tr>
                 <tr>
-                    <td>Senior 1</td>
+                    <td>Senior 1 LSL</td>
                     <td>Larry Dooley</td>
                     <td>086 815 0358</td>
                 </tr>
                 <tr>
-                    <td>Senior 2</td>
-                    <td>Jack Ryan</td>
-                    <td>087 315 2196</td>
+                    <td>Senior 2 UCL</td>
+                    <td>Damian Denihan</td>
+                    <td>085 722 1831</td>
                 </tr>
                 <tr>
-                    <td>Youths</td>
+                    <td>U19 LFA</td>
                     <td>Paul McGrath</td>
                     <td>087 238 6132</td>
                 </tr>
                 <tr>
-                    <td>U16 C</td>
+                    <td>U17 B1</td>
                     <td>Aidan Kelly</td>
                     <td>086 608 1006</td>
                 </tr>
                 <tr>
-                    <td>U15 B1 (Sat)</td>
+                    <td>U16 B</td>
                     <td>Robert Watt</td>
                     <td>087 223 3849</td>
                 </tr>
                 <tr>
-                    <td>U14 4</td>
+                    <td>U15 2</td>
                     <td>Diarmuid Doyle</td>
                     <td>087 905 7813</td>
                 </tr>
                 <tr>
-                    <td>U12 8</td>
-                    <td>Conor McGuire</td>
-                    <td>086 171 4334</td>
-                </tr>
-                <tr>
-                    <td>U12 4</td>
-                    <td>Kevin Maguire</td>
-                    <td>087 225 0390</td>
-                </tr>
-                <tr>
-                    <td>U12 1</td>
+                    <td>U13 1</td>
                     <td>Stephen Rowe</td>
                     <td>086 234 0231</td>
                 </tr>
                 <tr>
-                    <td>U11 E1</td>
-                    <td>Brendan O'Sullivan</td>
-                    <td>086 249 4967</td>
+                    <td>U13 4</td>
+                    <td>Kevin Maguire</td>
+                    <td>087 255 0390</td>
                 </tr>
                 <tr>
-                    <td>U11 D1</td>
-                    <td>Martin Kelly</td>
-                    <td>087 221 4886</td>
+                    <td>U13 6</td>
+                    <td>Conor McGuire</td>
+                    <td>086 171 4334</td>
                 </tr>
                 <tr>
-                    <td>U11 B1</td>
-                    <td>Mick Clifford</td>
-                    <td>087 638 3705</td>
-                </tr>
-                <tr>
-                    <td>U11 A1</td>
+                    <td>U12 2</td>
                     <td>Anthony Brady</td>
                     <td>087 605 5006</td>
                 </tr>
                 <tr>
-                    <td>U10 D (Sat)</td>
-                    <td>Joe Rogers</td>
-                    <td>087 130 7059</td>
+                    <td>U12 4</td>
+                    <td>Mick Clifford</td>
+                    <td>087 638 3705</td>
                 </tr>
                 <tr>
-                    <td>U10 E1</td>
-                    <td>Marty Whelan</td>
-                    <td>087 121 2552</td>
+                    <td>U12 7</td>
+                    <td>Ronan McLaughlin</td>
+                    <td>087 618 9079</td>
                 </tr>
                 <tr>
-                    <td>U10 D</td>
-                    <td>Stephane Surbled </td>
-                    <td>086 341 2484</td>
+                    <td>U12 8</td>
+                    <td>Brendan O'Sullivan</td>
+                    <td>086 249 4967</td>
                 </tr>
                 <tr>
-                    <td>U10 B</td>
-                    <td>Dermot Breslin</td>
-                    <td>086 048 0767</td>
-                </tr>
-                <tr>
-                    <td>U10 A1</td>
+                    <td>U11 A1</td>
                     <td>Derek Sugden</td>
                     <td>085 749 7402</td>
                 </tr>
                 <tr>
-                    <td>U8 Navy</td>
+                    <td>U11 B</td>
+                    <td>Dermot Breslin</td>
+                    <td>086 048 0767</td>
+                </tr>
+                <tr>
+                    <td>U11 C</td>
+                    <td>Stephen Surbled</td>
+                    <td>086 341 2484</td>
+                </tr>
+                <tr>
+                    <td>U11 D1</td>
+                    <td>Marty Whelan</td>
+                    <td>087 121 2552</td>
+                </tr>
+                <tr>
+                    <td>U11 B1 (Sat)</td>
+                    <td>Joe Rogers</td>
+                    <td>087 130 7059</td>
+                </tr>
+                <tr>
+                    <td>U9 Navy/Brown</td>
                     <td>Willie Patten</td>
                     <td>086 383 5926</td>
                 </tr>
                 <tr>
-                    <td>U8 Navy (Sat)</td>
+                    <td>U9 Emerald (Sat)</td>
                     <td>Stephen Brazil</td>
-                    <td>086 810 1108</td>
+                    <td>086 801 1108</td>
                 </tr>
-
+                <tr>
+                    <td>U8 (Sun)</td>
+                    <td>Ultan Breslin</td>
+                    <td>085 704 5669</td>
+                </tr>
             </table>
         </div>
 

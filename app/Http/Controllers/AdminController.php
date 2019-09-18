@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use App\FeaturedFixture;
 use App\FeaturedResults;
+use App\Fixtures2019;
 use App\NewFixtures;
 use App\Result;
 use Illuminate\Http\Request;
@@ -17,7 +18,7 @@ class AdminController extends Controller
         $articles = Article::orderBy('updated_at', 'DESC')->get();
         $featured_fixtures = FeaturedFixture::all();
         $featured_results = FeaturedResults::all();
-        $fixtures = NewFixtures::all();
+        $fixtures = Fixtures2019::all();
         $results = Result::all();
 
         return view('admin.admin-page')->with([

@@ -17,7 +17,7 @@
                     <input type="text" name="week_start" id="date" placeholder="E.g. 3rd Feb 2019"
                      required>
                 </div>
-            
+
                 <div class="form-group">
                     <table class="fixtures-table">
                         <thead>
@@ -34,104 +34,87 @@
                         <tbody>
                             <tr>
                                 <td><strong>Saturday</strong></td>
+                                {{-- Senior 1, Senior 2, U9 Emerald, U11 B - DONE --}}
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>U8 Navy</td>
-                                <td><input type="text" name="u8_navy_homeoraway"></td>
+                                <td>Senior 1 LSL</td>
+                                <td><input type="text" name="senior1_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u8_navy_opposition"></td>
-                                <td><input type="text" name="u8_navy_venue"></td>
-                                <td><input type="text" name="u8_navy_start"></td>
+                                <td><input type="text" name="senior1_opposition"></td>
+                                <td><input type="text" name="senior1_venue"></td>
+                                <td><input type="text" name="senior1_start"></td>
 
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>U10 C1</td>
-                                <td><input type="text" name="u10d_homeoraway"></td>
+                                <td>Senior 2 UCL</td>
+                                <td><input type="text" name="senior2_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u10d_opposition"></td>
-                                <td><input type="text" name="u10d_venue"></td>
-                                <td><input type="text" name="u10d_start"></td>
-                                
+                                <td><input type="text" name="senior2_opposition"></td>
+                                <td><input type="text" name="senior2_venue"></td>
+                                <td><input type="text" name="senior2_start"></td>
+
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U15 B1</td>
-                                <td><input type="text" name="u15_b1_homeoraway"></td>
+                                <td>U9 Emerald</td>
+                                <td><input type="text" name="u9_emerald_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u15_b1_opposition"></td>
-                                <td><input type="text" name="u15_b1_venue"></td>
-                                <td><input type="text" name="u15_b1_start"></td>
+                                <td><input type="text" name="u9_emerald_opposition"></td>
+                                <td><input type="text" name="u9_emerald_venue"></td>
+                                <td><input type="text" name="u9_emerald_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>Seniors 1</td>
-                                <td><input type="text" name="seniors_1_homeoraway"></td>
+                                <td>U11 B</td>
+                                <td><input type="text" name="u11_b_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="seniors_1_opposition"></td>
-                                <td><input type="text" name="seniors_1_venue"></td>
-                                <td><input type="text" name="seniors_1_start"></td>
-                            </tr>
-                            <tr> 
-                                <td></td>
-                                <td>Seniors 2</td>
-                                <td><input type="text" name="seniors_2_homeoraway"></td>
-                                <td><strong>Vs</strong></td>
-                                <td><input type="text" name="seniors_2_opposition"></td>
-                                <td><input type="text" name="seniors_2_venue"></td>
-                                <td><input type="text" name="seniors_2_start"></td>
+                                <td><input type="text" name="u11_b_opposition"></td>
+                                <td><input type="text" name="u11_b_venue"></td>
+                                <td><input type="text" name="u11_b_start"></td>
                             </tr>
 
                             <tr>
                                 <td><strong> Sunday </strong></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U8 Navy (Sunday)</td>
+                                <td>U8</td>
                                 <td><input type="text" name="u8_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
                                 <td><input type="text" name="u8_opposition"></td>
                                 <td><input type="text" name="u8_venue"></td>
                                 <td><input type="text" name="u8_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U10 A1</td>
-                                <td><input type="text" name="u10_a_homeoraway"></td>
+                                <td>U9 Navy</td>
+                                <td><input type="text" name="u9_navy_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u10_a_opposition"></td>
-                                <td><input type="text" name="u10_a_venue"></td>
-                                <td><input type="text" name="u10_a_start"></td>
+                                <td><input type="text" name="u9_navy_opposition"></td>
+                                <td><input type="text" name="u9_navy_venue"></td>
+                                <td><input type="text" name="u9_navy_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U10 B</td>
-                                <td><input type="text" name="u10_b_homeoraway"></td>
+                                <td>U9 Brown</td>
+                                <td><input type="text" name="u9_brown_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u10_b_opposition"></td>
-                                <td><input type="text" name="u10_b_venue"></td>
-                                <td><input type="text" name="u10_b_start"></td>
+                                <td><input type="text" name="u9_brown_opposition"></td>
+                                <td><input type="text" name="u9_brown_venue"></td>
+                                <td><input type="text" name="u9_brown_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U10 D</td>
-                                <td><input type="text" name="u10_d_homeoraway"></td>
+                                <td>U10 </td>
+                                <td><input type="text" name="u10_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u10_d_opposition"></td>
-                                <td><input type="text" name="u10_d_venue"></td>
-                                <td><input type="text" name="u10_d_start"></td>
+                                <td><input type="text" name="u10_opposition"></td>
+                                <td><input type="text" name="u10_venue"></td>
+                                <td><input type="text" name="u10_start"></td>
                             </tr>
-                            <tr> 
-                                <td></td>
-                                <td>U10 E1</td>
-                                <td><input type="text" name="u10_e1_homeoraway"></td>
-                                <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u10_e1_opposition"></td>
-                                <td><input type="text" name="u10_e1_venue"></td>
-                                <td><input type="text" name="u10_e1_start"></td>
-                            </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
                                 <td>U11 A1</td>
                                 <td><input type="text" name="u11_a1_homeoraway"></td>
@@ -140,43 +123,43 @@
                                 <td><input type="text" name="u11_a1_venue"></td>
                                 <td><input type="text" name="u11_a1_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U11 B1</td>
-                                <td><input type="text" name="u11_b1_homeoraway"></td>
+                                <td>U11 B</td>
+                                <td><input type="text" name="u11_b_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u11_b1_opposition"></td>
-                                <td><input type="text" name="u11_b1_venue"></td>
-                                <td><input type="text" name="u11_b1_start"></td>
+                                <td><input type="text" name="u11_b_opposition"></td>
+                                <td><input type="text" name="u11_b_venue"></td>
+                                <td><input type="text" name="u11_b_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U11 D</td>
-                                <td><input type="text" name="u11_d_homeoraway"></td>
+                                <td>U11 C</td>
+                                <td><input type="text" name="u11_c_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u11_d_opposition"></td>
-                                <td><input type="text" name="u11_d_venue"></td>
-                                <td><input type="text" name="u11_d_start"></td>
+                                <td><input type="text" name="u11_c_opposition"></td>
+                                <td><input type="text" name="u11_c_venue"></td>
+                                <td><input type="text" name="u11_c_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U11 E1</td>
-                                <td><input type="text" name="u11_e1_homeoraway"></td>
+                                <td>U11 D1</td>
+                                <td><input type="text" name="u11_d1_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u11_e1_opposition"></td>
-                                <td><input type="text" name="u11_e1_venue"></td>
-                                <td><input type="text" name="u11_e1_start"></td>
+                                <td><input type="text" name="u11_d1_opposition"></td>
+                                <td><input type="text" name="u11_d1_venue"></td>
+                                <td><input type="text" name="u11_d1_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U12 1</td>
-                                <td><input type="text" name="u12_1_homeoraway"></td>
+                                <td>U12 2</td>
+                                <td><input type="text" name="u12_2_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u12_1_opposition"></td>
-                                <td><input type="text" name="u12_1_venue"></td>
-                                <td><input type="text" name="u12_1_start"></td>
+                                <td><input type="text" name="u12_2_opposition"></td>
+                                <td><input type="text" name="u12_2_venue"></td>
+                                <td><input type="text" name="u12_2_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
                                 <td>U12 4</td>
                                 <td><input type="text" name="u12_4_homeoraway"></td>
@@ -185,7 +168,16 @@
                                 <td><input type="text" name="u12_4_venue"></td>
                                 <td><input type="text" name="u12_4_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
+                                <td></td>
+                                <td>U12 7</td>
+                                <td><input type="text" name="u12_7_homeoraway"></td>
+                                <td><strong>Vs</strong></td>
+                                <td><input type="text" name="u12_7_opposition"></td>
+                                <td><input type="text" name="u12_7_venue"></td>
+                                <td><input type="text" name="u12_7_start"></td>
+                            </tr>
+                            <tr>
                                 <td></td>
                                 <td>U12 8</td>
                                 <td><input type="text" name="u12_8_homeoraway"></td>
@@ -194,43 +186,80 @@
                                 <td><input type="text" name="u12_8_venue"></td>
                                 <td><input type="text" name="u12_8_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U14 4</td>
-                                <td><input type="text" name="u14_4_homeoraway"></td>
+                                <td>U13 1</td>
+                                <td><input type="text" name="u13_1_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u14_4_opposition"></td>
-                                <td><input type="text" name="u14_4_venue"></td>
-                                <td><input type="text" name="u14_4_start"></td>
+                                <td><input type="text" name="u13_1_opposition"></td>
+                                <td><input type="text" name="u13_1_venue"></td>
+                                <td><input type="text" name="u13_1_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>U16 C</td>
-                                <td><input type="text" name="u16_c_homeoraway"></td>
+                                <td>U13 4</td>
+                                <td><input type="text" name="u13_4_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="u16_c_opposition"></td>
-                                <td><input type="text" name="u16_c_venue"></td>
-                                <td><input type="text" name="u16_c_start"></td>
+                                <td><input type="text" name="u13_4_opposition"></td>
+                                <td><input type="text" name="u13_4_venue"></td>
+                                <td><input type="text" name="u13_4_start"></td>
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td></td>
-                                <td>Youths</td>
-                                <td><input type="text" name="youths_homeoraway"></td>
+                                <td>U13 6</td>
+                                <td><input type="text" name="u13_6_homeoraway"></td>
                                 <td><strong>Vs</strong></td>
-                                <td><input type="text" name="youths_opposition"></td>
-                                <td><input type="text" name="youths_venue"></td>
-                                <td><input type="text" name="youths_start"></td>
+                                <td><input type="text" name="u13_6_opposition"></td>
+                                <td><input type="text" name="u13_6_venue"></td>
+                                <td><input type="text" name="u13_6_start"></td>
                             </tr>
+                            <tr>
+                                <td></td>
+                                <td>U15 2</td>
+                                <td><input type="text" name="u15_2_homeoraway"></td>
+                                <td><strong>Vs</strong></td>
+                                <td><input type="text" name="u15_2_opposition"></td>
+                                <td><input type="text" name="u15_2_venue"></td>
+                                <td><input type="text" name="u15_2_start"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>U16 B</td>
+                                <td><input type="text" name="u16_b_homeoraway"></td>
+                                <td><strong>Vs</strong></td>
+                                <td><input type="text" name="u16_b_opposition"></td>
+                                <td><input type="text" name="u16_b_venue"></td>
+                                <td><input type="text" name="u16_b_start"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>U17 B1</td>
+                                <td><input type="text" name="u17_b1_homeoraway"></td>
+                                <td><strong>Vs</strong></td>
+                                <td><input type="text" name="u17_b1_opposition"></td>
+                                <td><input type="text" name="u17_b1_venue"></td>
+                                <td><input type="text" name="u17_b1_start"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>U19 LFA</td>
+                                <td><input type="text" name="u19_lfa_homeoraway"></td>
+                                <td><strong>Vs</strong></td>
+                                <td><input type="text" name="u19_lfa_opposition"></td>
+                                <td><input type="text" name="u19_lfa_venue"></td>
+                                <td><input type="text" name="u19_lfa_start"></td>
+                            </tr>
+
                         </tbody>
                     </table>
                 </div>
-            
-            
-            
+
+
+
                 <button>Save</button>
                 <a href="/admin">Go Back</a>
             </form>
-        
+
 
     </section>
 @endsection
