@@ -27,6 +27,7 @@ Fixtures - Drumcondra A.F.C
             </div>
             @endforeach
         @endif
+
     </div>
 
 @endsection
