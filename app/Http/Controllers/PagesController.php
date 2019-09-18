@@ -63,7 +63,7 @@ class PagesController extends Controller
 
     public function fixtures()
     {
-        // $fixtures = Fixtures2019::all();
+        $fixtures = Fixtures2019::all();
 
         return view('frontend.fixtures')->with('fixtures', $fixtures);
     }
