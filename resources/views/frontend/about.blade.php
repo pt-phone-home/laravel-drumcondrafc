@@ -123,8 +123,8 @@ About Drumcondra FC: One Club - One Community
                 </tr>
                 <tr>
                     <td>U11 D1</td>
-                    <td>Marty Whelan</td>
-                    <td>087 121 2552</td>
+                    <td>Kevin McFadden</td>
+                    <td>086 048 2077</td>
                 </tr>
                 <tr>
                     <td>U11 B1 (Sat)</td>
