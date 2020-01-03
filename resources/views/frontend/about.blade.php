@@ -133,7 +133,7 @@ About Drumcondra FC: One Club - One Community
                 </tr>
                 <tr>
                     <td>U9 Navy/Brown</td>
-                    <td>Willie Patten</td>
+                    <td>William Patten</td>
                     <td>086 383 5926</td>
                 </tr>
                 <tr>
