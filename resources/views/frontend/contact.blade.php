@@ -14,10 +14,10 @@ Contact - Drumcondra A.F.C
 
     <div class="contact-info">
 
-        
+
 
         <div class="contact-info-form">
-                
+
             <div class="contact-info-form-container">
                 <h1>Contact form</h1>
 
@@ -33,7 +33,7 @@ Contact - Drumcondra A.F.C
                         @endforeach
                     </ul>
                   @endif
-                    
+
                     @include('inc.messages')
 
                     <div class="form-group">
@@ -43,7 +43,7 @@ Contact - Drumcondra A.F.C
                     </div>
                     <div class="form-group">
                         <label for="email">Email:</label>
-                        <input type="email" placeholder="Your Email" name="email" id="email" 
+                        <input type="email" placeholder="Your Email" name="email" id="email"
                     required value="{{old('email')}}">
                     </div>
                     <div class="form-group">
@@ -60,7 +60,7 @@ Contact - Drumcondra A.F.C
                             {!! NoCaptcha::display() !!}
                     </div>
                     <input type="submit" value="Send" class="submit">
-                    
+
 
                 </form>
             </div>
@@ -82,7 +82,7 @@ Contact - Drumcondra A.F.C
                 <h3> 087 744 3583</h3>
             </div>
             <h4 class="contact_email">Email:
-                <span>jacintadrumcondra1@gmail.com</span>
+                <span>drumcondraafc@gmail.com</span>
             </h4>
 
 

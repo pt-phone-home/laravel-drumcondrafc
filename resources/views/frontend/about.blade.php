@@ -42,109 +42,134 @@ About Drumcondra FC: One Club - One Community
                     <th>Contact</th>
                 </tr>
                 <tr>
-                    <td>Senior 1 LSL</td>
-                    <td>Larry Dooley</td>
-                    <td>086 815 0358</td>
+                    <td colspan="3" style="text-align: center"><strong>Saturday</strong></td>
                 </tr>
                 <tr>
-                    <td>Senior 2 UCL</td>
-                    <td>Damian Denihan</td>
-                    <td>085 722 1831</td>
+                    <td>Little Drummers (4 - 7)</td>
+                    <td>Noel McManus </td>
+                    <td>087 9830443</td>
                 </tr>
                 <tr>
-                    <td>U19 LFA</td>
-                    <td>Paul McGrath</td>
-                    <td>087 238 6132</td>
+                    <td>U10C</td>
+                    <td>Stepen Brazil</td>
+                    <td>086 8101108</td>
                 </tr>
                 <tr>
-                    <td>U17 B1</td>
-                    <td>Aidan Kelly</td>
-                    <td>086 608 1006</td>
+                    <td>U12B</td>
+                    <td>Stephen Grimes</td>
+                    <td>087 1365182</td>
                 </tr>
                 <tr>
-                    <td>U16 B</td>
-                    <td>Robert Watt</td>
-                    <td>087 223 3849</td>
+                    <td colspan="3" style="text-align: center"><strong>Sunday</strong></td>
                 </tr>
                 <tr>
-                    <td>U15 2</td>
-                    <td>Diarmuid Doyle</td>
-                    <td>087 905 7813</td>
+                    <td>U8 </td>
+                    <td>Daniel Rea</td>
+                    <td>083 3343655</td>
                 </tr>
                 <tr>
-                    <td>U13 1</td>
-                    <td>Stephen Rowe</td>
-                    <td>086 234 0231</td>
+                    <td>U9 Green</td>
+                    <td>Ultan Breslin</td>
+                    <td>085 7045669</td>
                 </tr>
                 <tr>
-                    <td>U13 4</td>
-                    <td>Kevin Maguire</td>
-                    <td>087 255 0390</td>
+                    <td>U10 A1</td>
+                    <td>Paddy Lyons</td>
+                    <td>086 7842903</td>
                 </tr>
                 <tr>
-                    <td>U13 6</td>
-                    <td>Conor McGuire</td>
-                    <td>086 171 4334</td>
+                    <td>U10  C1</td>
+                    <td>Stephen Joyce</td>
+                    <td>087 2766497</td>
                 </tr>
                 <tr>
-                    <td>U12 2</td>
-                    <td>Anthony Brady</td>
-                    <td>087 605 5006</td>
-                </tr>
-                <tr>
-                    <td>U12 4</td>
-                    <td>Mick Clifford</td>
-                    <td>087 638 3705</td>
-                </tr>
-                <tr>
-                    <td>U12 7</td>
-                    <td>Ronan McLaughlin</td>
-                    <td>087 618 9079</td>
-                </tr>
-                <tr>
-                    <td>U12 8</td>
-                    <td>Brendan O'Sullivan</td>
-                    <td>086 249 4967</td>
-                </tr>
-                <tr>
-                    <td>U11 A1</td>
-                    <td>Derek Sugden</td>
-                    <td>085 749 7402</td>
-                </tr>
-                <tr>
-                    <td>U11 B</td>
-                    <td>Dermot Breslin</td>
-                    <td>086 048 0767</td>
-                </tr>
-                <tr>
-                    <td>U11 C</td>
-                    <td>Stephen Surbled</td>
-                    <td>086 341 2484</td>
+                    <td>U10 F</td>
+                    <td>William Patten</td>
+                    <td>086 3835926</td>
                 </tr>
                 <tr>
                     <td>U11 D1</td>
+                    <td>Bepi Gaidoni</td>
+                    <td>087 7427853</td>
+                </tr>
+                <tr>
+                    <td>12-2 North</td>
+                    <td>Derek Hughes</td>
+                    <td>086 0495082</td>
+                </tr>
+                <tr>
+                    <td>U12-3</td>
+                    <td>Stephane Surbled</td>
+                    <td>086 3412484</td>
+                </tr>
+                <tr>
+                    <td>U12-7</td>
                     <td>Kevin McFadden</td>
-                    <td>086 048 2077</td>
+                    <td>086 0482077</td>
                 </tr>
                 <tr>
-                    <td>U11 B1 (Sat)</td>
-                    <td>Joe Rogers</td>
-                    <td>087 130 7059</td>
+                    <td>U13-3</td>
+                    <td>Anthony Brady </td>
+                    <td>087 6055006</td>
                 </tr>
                 <tr>
-                    <td>U9 Navy/Brown</td>
-                    <td>William Patten</td>
-                    <td>086 383 5926</td>
+                    <td>U13-5</td>
+                    <td>Mick Clifford</td>
+                    <td>087 6383705</td>
                 </tr>
                 <tr>
-                    <td>U9 Emerald (Sat)</td>
-                    <td>Stephen Brazil</td>
-                    <td>086 801 1108</td>
+                    <td>U13-9</td>
+                    <td>Brendan O'Sullivan </td>
+                    <td>086 2494967</td>
                 </tr>
                 <tr>
-                    <td>U8 (Sun)</td>
-                    <td>Ultan Breslin</td>
-                    <td>085 704 5669</td>
+                    <td>U14-1 </td>
+                    <td>Stephen Rowe</td>
+                    <td>086 2340231</td>
+                </tr>
+                <tr>
+                    <td>U14-3</td>
+                    <td>Kevin Maguire</td>
+                    <td>087 2250390</td>
+                </tr>
+                <tr>
+                    <td>U16 B1</td>
+                    <td>Alan McNamee</td>
+                    <td>086 8295955</td>
+                </tr>
+                <tr>
+                    <td>U17 Maj North</td>
+                    <td>Robert Watt</td>
+                    <td>087 2233849</td>
+                </tr>
+                <tr>
+                    <td>U18 Maj 1 </td>
+                    <td>Aidan Kelly</td>
+                    <td>086 6081006</td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>LFL U21</td>
+                    <td>Paul McGrath</td>
+                    <td>087 2386132</td>
+                </tr>
+                <tr>
+                    <td>Seniors LSL</td>
+                    <td>Larry Dooley</td>
+                    <td>083 0107995</td>
+                </tr>
+                <tr>
+                    <td>Seniors UCFL</td>
+                    <td>Damian Deehan</td>
+                    <td>085 7221831</td>
                 </tr>
             </table>
         </div>
